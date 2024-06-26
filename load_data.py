@@ -11,6 +11,7 @@ from tqdm import tqdm
 DATA_DIR = "../../data/biopsies_s1.0_anon_data/"
 
 P53_CLASS_NAMES = ["Wildtype", "Overexpression", "Nullmutation", "Doubleclone"]
+P53_CLASS_CODES = ["WT", "OE", "NM", "DC"]
 
 
 ###############################################################################
