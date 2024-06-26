@@ -1,0 +1,2326 @@
+Epoch [1/10], Step [100/1472], Loss: 1.4194
+Label distribution: [32, 35, 33, 0]
+Pred distribution: [0, 2, 0, 98]
+Epoch [1/10], Step [200/1472], Loss: 1.3752
+Label distribution: [39, 35, 26, 0]
+Pred distribution: [0, 100, 0, 0]
+Epoch [1/10], Step [300/1472], Loss: 1.3561
+Label distribution: [25, 32, 43, 0]
+Pred distribution: [0, 100, 0, 0]
+Epoch [1/10], Step [400/1472], Loss: 1.3302
+Label distribution: [40, 38, 22, 0]
+Pred distribution: [5, 90, 5, 0]
+Epoch [1/10], Step [500/1472], Loss: 1.3296
+Label distribution: [33, 30, 37, 0]
+Pred distribution: [49, 51, 0, 0]
+Epoch [1/10], Step [600/1472], Loss: 1.3109
+Label distribution: [29, 33, 38, 0]
+Pred distribution: [42, 33, 25, 0]
+Epoch [1/10], Step [700/1472], Loss: 1.3054
+Label distribution: [41, 29, 30, 0]
+Pred distribution: [13, 37, 50, 0]
+Epoch [1/10], Step [800/1472], Loss: 1.2824
+Label distribution: [31, 34, 35, 0]
+Pred distribution: [13, 24, 63, 0]
+Epoch [1/10], Step [900/1472], Loss: 1.2761
+Label distribution: [32, 33, 35, 0]
+Pred distribution: [0, 45, 55, 0]
+Epoch [1/10], Step [1000/1472], Loss: 1.2684
+Label distribution: [32, 32, 36, 0]
+Pred distribution: [0, 43, 57, 0]
+Epoch [1/10], Step [1100/1472], Loss: 1.2176
+Label distribution: [31, 43, 26, 0]
+Pred distribution: [0, 57, 43, 0]
+Epoch [1/10], Step [1200/1472], Loss: 1.2076
+Label distribution: [31, 32, 37, 0]
+Pred distribution: [0, 42, 58, 0]
+Epoch [1/10], Step [1300/1472], Loss: 1.1858
+Label distribution: [32, 34, 34, 0]
+Pred distribution: [0, 48, 52, 0]
+Epoch [1/10], Step [1400/1472], Loss: 1.1962
+Label distribution: [37, 25, 38, 0]
+Pred distribution: [0, 35, 65, 0]
+Accuracy per class: [0.  0.2 0.  0. ]
+Average accuracy: 0.05
+Time elapsed: 112.53201270103455 seconds
+Epoch [2/10], Step [100/1472], Loss: 1.1805
+Label distribution: [34, 32, 34, 0]
+Pred distribution: [0, 44, 56, 0]
+Epoch [2/10], Step [200/1472], Loss: 1.1508
+Label distribution: [34, 38, 28, 0]
+Pred distribution: [0, 46, 54, 0]
+Epoch [2/10], Step [300/1472], Loss: 1.1324
+Label distribution: [29, 36, 35, 0]
+Pred distribution: [0, 45, 55, 0]
+Epoch [2/10], Step [400/1472], Loss: 1.1393
+Label distribution: [33, 30, 37, 0]
+Pred distribution: [0, 42, 58, 0]
+Epoch [2/10], Step [500/1472], Loss: 1.1245
+Label distribution: [31, 30, 39, 0]
+Pred distribution: [0, 38, 62, 0]
+Epoch [2/10], Step [600/1472], Loss: 1.1272
+Label distribution: [30, 38, 32, 0]
+Pred distribution: [0, 47, 53, 0]
+Epoch [2/10], Step [700/1472], Loss: 1.1344
+Label distribution: [34, 24, 42, 0]
+Pred distribution: [0, 36, 64, 0]
+Epoch [2/10], Step [800/1472], Loss: 1.0579
+Label distribution: [27, 36, 37, 0]
+Pred distribution: [0, 38, 62, 0]
+Epoch [2/10], Step [900/1472], Loss: 1.0845
+Label distribution: [34, 40, 26, 0]
+Pred distribution: [2, 46, 52, 0]
+Epoch [2/10], Step [1000/1472], Loss: 1.0855
+Label distribution: [33, 39, 28, 0]
+Pred distribution: [6, 48, 46, 0]
+Epoch [2/10], Step [1100/1472], Loss: 1.1225
+Label distribution: [40, 27, 33, 0]
+Pred distribution: [37, 32, 31, 0]
+Epoch [2/10], Step [1200/1472], Loss: 1.0951
+Label distribution: [33, 25, 42, 0]
+Pred distribution: [9, 30, 61, 0]
+Epoch [2/10], Step [1300/1472], Loss: 1.0660
+Label distribution: [30, 33, 37, 0]
+Pred distribution: [3, 35, 62, 0]
+Epoch [2/10], Step [1400/1472], Loss: 1.0509
+Label distribution: [31, 36, 33, 0]
+Pred distribution: [14, 37, 49, 0]
+Accuracy per class: [0.         0.26666667 0.         0.        ]
+Average accuracy: 0.06666666666666667
+Time elapsed: 253.47304105758667 seconds
+Epoch [3/10], Step [100/1472], Loss: 1.1026
+Label distribution: [35, 33, 32, 0]
+Pred distribution: [34, 30, 36, 0]
+Epoch [3/10], Step [200/1472], Loss: 1.0769
+Label distribution: [39, 31, 30, 0]
+Pred distribution: [35, 38, 27, 0]
+Epoch [3/10], Step [300/1472], Loss: 1.0112
+Label distribution: [30, 45, 25, 0]
+Pred distribution: [23, 50, 27, 0]
+Epoch [3/10], Step [400/1472], Loss: 1.0577
+Label distribution: [32, 29, 39, 0]
+Pred distribution: [15, 32, 53, 0]
+Epoch [3/10], Step [500/1472], Loss: 1.0708
+Label distribution: [37, 30, 33, 0]
+Pred distribution: [32, 32, 36, 0]
+Epoch [3/10], Step [600/1472], Loss: 1.0316
+Label distribution: [34, 33, 33, 0]
+Pred distribution: [27, 37, 36, 0]
+Epoch [3/10], Step [700/1472], Loss: 1.0132
+Label distribution: [31, 37, 32, 0]
+Pred distribution: [34, 41, 25, 0]
+Epoch [3/10], Step [800/1472], Loss: 1.0502
+Label distribution: [33, 35, 32, 0]
+Pred distribution: [35, 40, 25, 0]
+Epoch [3/10], Step [900/1472], Loss: 1.0460
+Label distribution: [38, 33, 29, 0]
+Pred distribution: [35, 39, 26, 0]
+Epoch [3/10], Step [1000/1472], Loss: 1.0209
+Label distribution: [38, 34, 28, 0]
+Pred distribution: [43, 36, 21, 0]
+Epoch [3/10], Step [1100/1472], Loss: 1.0001
+Label distribution: [43, 36, 21, 0]
+Pred distribution: [55, 34, 11, 0]
+Epoch [3/10], Step [1200/1472], Loss: 1.0419
+Label distribution: [27, 29, 44, 0]
+Pred distribution: [39, 33, 28, 0]
+Epoch [3/10], Step [1300/1472], Loss: 1.0454
+Label distribution: [39, 33, 28, 0]
+Pred distribution: [35, 34, 31, 0]
+Epoch [3/10], Step [1400/1472], Loss: 1.0417
+Label distribution: [36, 28, 36, 0]
+Pred distribution: [45, 26, 29, 0]
+Accuracy per class: [0.46666667 0.13333333 0.         0.        ]
+Average accuracy: 0.15
+Time elapsed: 411.8424541950226 seconds
+Epoch [4/10], Step [100/1472], Loss: 1.0705
+Label distribution: [43, 20, 37, 0]
+Pred distribution: [56, 22, 22, 0]
+Epoch [4/10], Step [200/1472], Loss: 1.0053
+Label distribution: [36, 34, 30, 0]
+Pred distribution: [41, 35, 24, 0]
+Epoch [4/10], Step [300/1472], Loss: 0.9806
+Label distribution: [38, 28, 34, 0]
+Pred distribution: [41, 28, 31, 0]
+Epoch [4/10], Step [400/1472], Loss: 0.9955
+Label distribution: [38, 30, 32, 0]
+Pred distribution: [43, 30, 27, 0]
+Epoch [4/10], Step [500/1472], Loss: 1.0143
+Label distribution: [40, 29, 31, 0]
+Pred distribution: [44, 30, 26, 0]
+Epoch [4/10], Step [600/1472], Loss: 0.9402
+Label distribution: [35, 38, 27, 0]
+Pred distribution: [39, 41, 20, 0]
+Epoch [4/10], Step [700/1472], Loss: 0.9123
+Label distribution: [31, 29, 40, 0]
+Pred distribution: [27, 29, 44, 0]
+Epoch [4/10], Step [800/1472], Loss: 0.9640
+Label distribution: [32, 32, 36, 0]
+Pred distribution: [35, 31, 34, 0]
+Epoch [4/10], Step [900/1472], Loss: 0.9825
+Label distribution: [38, 33, 29, 0]
+Pred distribution: [36, 34, 30, 0]
+Epoch [4/10], Step [1000/1472], Loss: 1.0160
+Label distribution: [36, 34, 30, 0]
+Pred distribution: [42, 35, 23, 0]
+Epoch [4/10], Step [1100/1472], Loss: 0.9588
+Label distribution: [24, 39, 37, 0]
+Pred distribution: [19, 44, 37, 0]
+Epoch [4/10], Step [1200/1472], Loss: 0.9165
+Label distribution: [40, 36, 24, 0]
+Pred distribution: [41, 37, 22, 0]
+Epoch [4/10], Step [1300/1472], Loss: 0.9710
+Label distribution: [32, 33, 35, 0]
+Pred distribution: [31, 32, 37, 0]
+Epoch [4/10], Step [1400/1472], Loss: 0.9563
+Label distribution: [31, 35, 34, 0]
+Pred distribution: [31, 37, 32, 0]
+Accuracy per class: [0.26666667 0.2        0.         0.        ]
+Average accuracy: 0.11666666666666667
+Time elapsed: 583.6828365325928 seconds
+Epoch [5/10], Step [100/1472], Loss: 0.9619
+Label distribution: [32, 33, 35, 0]
+Pred distribution: [25, 36, 39, 0]
+Epoch [5/10], Step [200/1472], Loss: 0.9476
+Label distribution: [31, 36, 33, 0]
+Pred distribution: [31, 35, 34, 0]
+Epoch [5/10], Step [300/1472], Loss: 0.9393
+Label distribution: [39, 35, 26, 0]
+Pred distribution: [38, 36, 26, 0]
+Epoch [5/10], Step [400/1472], Loss: 0.9597
+Label distribution: [28, 30, 42, 0]
+Pred distribution: [23, 33, 44, 0]
+Epoch [5/10], Step [500/1472], Loss: 0.9366
+Label distribution: [25, 37, 38, 0]
+Pred distribution: [23, 34, 43, 0]
+Epoch [5/10], Step [600/1472], Loss: 1.0380
+Label distribution: [33, 32, 35, 0]
+Pred distribution: [36, 33, 31, 0]
+Epoch [5/10], Step [700/1472], Loss: 0.9157
+Label distribution: [29, 36, 35, 0]
+Pred distribution: [35, 36, 29, 0]
+Epoch [5/10], Step [800/1472], Loss: 0.9846
+Label distribution: [41, 23, 36, 0]
+Pred distribution: [46, 23, 31, 0]
+Epoch [5/10], Step [900/1472], Loss: 0.9053
+Label distribution: [32, 40, 28, 0]
+Pred distribution: [35, 42, 23, 0]
+Epoch [5/10], Step [1000/1472], Loss: 0.9295
+Label distribution: [30, 36, 34, 0]
+Pred distribution: [30, 37, 33, 0]
+Epoch [5/10], Step [1100/1472], Loss: 0.9711
+Label distribution: [43, 30, 27, 0]
+Pred distribution: [46, 31, 23, 0]
+Epoch [5/10], Step [1200/1472], Loss: 0.9344
+Label distribution: [43, 27, 30, 0]
+Pred distribution: [43, 27, 30, 0]
+Epoch [5/10], Step [1300/1472], Loss: 0.9696
+Label distribution: [27, 38, 35, 0]
+Pred distribution: [32, 35, 33, 0]
+Epoch [5/10], Step [1400/1472], Loss: 1.0448
+Label distribution: [40, 30, 30, 0]
+Pred distribution: [33, 32, 35, 0]
+Accuracy per class: [0.  0.8 0.  0. ]
+Average accuracy: 0.2
+Time elapsed: 776.1301028728485 seconds
+Epoch [6/10], Step [100/1472], Loss: 0.9537
+Label distribution: [33, 39, 28, 0]
+Pred distribution: [40, 40, 20, 0]
+Epoch [6/10], Step [200/1472], Loss: 0.9020
+Label distribution: [37, 33, 30, 0]
+Pred distribution: [36, 36, 28, 0]
+Epoch [6/10], Step [300/1472], Loss: 0.9339
+Label distribution: [30, 35, 35, 0]
+Pred distribution: [31, 37, 32, 0]
+Epoch [6/10], Step [400/1472], Loss: 0.9329
+Label distribution: [31, 36, 33, 0]
+Pred distribution: [29, 37, 34, 0]
+Epoch [6/10], Step [500/1472], Loss: 0.9219
+Label distribution: [34, 38, 28, 0]
+Pred distribution: [30, 40, 30, 0]
+Epoch [6/10], Step [600/1472], Loss: 0.9481
+Label distribution: [35, 31, 34, 0]
+Pred distribution: [37, 31, 32, 0]
+Epoch [6/10], Step [700/1472], Loss: 0.9782
+Label distribution: [32, 33, 35, 0]
+Pred distribution: [34, 34, 32, 0]
+Epoch [6/10], Step [800/1472], Loss: 0.9053
+Label distribution: [33, 34, 33, 0]
+Pred distribution: [30, 36, 34, 0]
+Epoch [6/10], Step [900/1472], Loss: 0.9513
+Label distribution: [34, 38, 28, 0]
+Pred distribution: [39, 38, 23, 0]
+Epoch [6/10], Step [1000/1472], Loss: 0.8947
+Label distribution: [31, 32, 37, 0]
+Pred distribution: [24, 33, 43, 0]
+Epoch [6/10], Step [1100/1472], Loss: 0.9543
+Label distribution: [35, 27, 38, 0]
+Pred distribution: [33, 35, 32, 0]
+Epoch [6/10], Step [1200/1472], Loss: 0.9520
+Label distribution: [29, 28, 43, 0]
+Pred distribution: [28, 28, 44, 0]
+Epoch [6/10], Step [1300/1472], Loss: 0.9384
+Label distribution: [33, 35, 32, 0]
+Pred distribution: [38, 32, 30, 0]
+Epoch [6/10], Step [1400/1472], Loss: 0.8947
+Label distribution: [38, 31, 31, 0]
+Pred distribution: [36, 30, 34, 0]
+Accuracy per class: [1. 0. 0. 0.]
+Average accuracy: 0.25
+Time elapsed: 982.8501954078674 seconds
+Epoch [7/10], Step [100/1472], Loss: 0.9019
+Label distribution: [36, 34, 30, 0]
+Pred distribution: [31, 39, 30, 0]
+Epoch [7/10], Step [200/1472], Loss: 0.9430
+Label distribution: [34, 27, 39, 0]
+Pred distribution: [37, 29, 34, 0]
+Epoch [7/10], Step [300/1472], Loss: 0.9023
+Label distribution: [36, 31, 33, 0]
+Pred distribution: [36, 31, 33, 0]
+Epoch [7/10], Step [400/1472], Loss: 0.8768
+Label distribution: [33, 32, 35, 0]
+Pred distribution: [32, 32, 36, 0]
+Epoch [7/10], Step [500/1472], Loss: 0.9351
+Label distribution: [27, 35, 38, 0]
+Pred distribution: [31, 31, 38, 0]
+Epoch [7/10], Step [600/1472], Loss: 0.9455
+Label distribution: [34, 34, 32, 0]
+Pred distribution: [30, 35, 35, 0]
+Epoch [7/10], Step [700/1472], Loss: 0.9269
+Label distribution: [38, 37, 25, 0]
+Pred distribution: [44, 36, 20, 0]
+Epoch [7/10], Step [800/1472], Loss: 0.8698
+Label distribution: [34, 34, 32, 0]
+Pred distribution: [35, 35, 30, 0]
+Epoch [7/10], Step [900/1472], Loss: 0.9460
+Label distribution: [24, 29, 47, 0]
+Pred distribution: [21, 32, 47, 0]
+Epoch [7/10], Step [1000/1472], Loss: 0.8859
+Label distribution: [29, 32, 39, 0]
+Pred distribution: [27, 31, 42, 0]
+Epoch [7/10], Step [1100/1472], Loss: 0.8697
+Label distribution: [25, 39, 36, 0]
+Pred distribution: [27, 40, 33, 0]
+Epoch [7/10], Step [1200/1472], Loss: 0.9355
+Label distribution: [29, 42, 29, 0]
+Pred distribution: [30, 43, 27, 0]
+Epoch [7/10], Step [1300/1472], Loss: 0.9251
+Label distribution: [35, 36, 29, 0]
+Pred distribution: [33, 41, 26, 0]
+Epoch [7/10], Step [1400/1472], Loss: 0.9197
+Label distribution: [39, 30, 31, 0]
+Pred distribution: [39, 31, 30, 0]
+Accuracy per class: [1. 0. 0. 0.]
+Average accuracy: 0.25
+Time elapsed: 1185.3136687278748 seconds
+Epoch [8/10], Step [100/1472], Loss: 0.9134
+Label distribution: [40, 30, 30, 0]
+Pred distribution: [47, 27, 26, 0]
+Epoch [8/10], Step [200/1472], Loss: 0.9212
+Label distribution: [33, 36, 31, 0]
+Pred distribution: [38, 36, 26, 0]
+Epoch [8/10], Step [300/1472], Loss: 0.8956
+Label distribution: [29, 36, 35, 0]
+Pred distribution: [31, 38, 31, 0]
+Epoch [8/10], Step [400/1472], Loss: 0.9228
+Label distribution: [30, 41, 29, 0]
+Pred distribution: [26, 42, 32, 0]
+Epoch [8/10], Step [500/1472], Loss: 0.8756
+Label distribution: [46, 31, 23, 0]
+Pred distribution: [45, 34, 21, 0]
+Epoch [8/10], Step [600/1472], Loss: 0.8884
+Label distribution: [33, 37, 30, 0]
+Pred distribution: [32, 37, 31, 0]
+Epoch [8/10], Step [700/1472], Loss: 0.8920
+Label distribution: [37, 25, 38, 0]
+Pred distribution: [43, 25, 32, 0]
+Epoch [8/10], Step [800/1472], Loss: 0.8618
+Label distribution: [27, 35, 38, 0]
+Pred distribution: [27, 35, 38, 0]
+Epoch [8/10], Step [900/1472], Loss: 0.9041
+Label distribution: [27, 38, 35, 0]
+Pred distribution: [30, 38, 32, 0]
+Epoch [8/10], Step [1000/1472], Loss: 0.8947
+Label distribution: [41, 33, 26, 0]
+Pred distribution: [41, 35, 24, 0]
+Epoch [8/10], Step [1100/1472], Loss: 0.8752
+Label distribution: [31, 36, 33, 0]
+Pred distribution: [29, 40, 31, 0]
+Epoch [8/10], Step [1200/1472], Loss: 0.8714
+Label distribution: [34, 33, 33, 0]
+Pred distribution: [34, 35, 31, 0]
+Epoch [8/10], Step [1300/1472], Loss: 0.8523
+Label distribution: [37, 34, 29, 0]
+Pred distribution: [41, 35, 24, 0]
+Epoch [8/10], Step [1400/1472], Loss: 0.8818
+Label distribution: [38, 37, 25, 0]
+Pred distribution: [42, 38, 20, 0]
+Accuracy per class: [0.93333333 0.         0.         0.        ]
+Average accuracy: 0.23333333333333334
+Time elapsed: 1390.3432824611664 seconds
+Epoch [9/10], Step [100/1472], Loss: 0.8710
+Label distribution: [39, 35, 26, 0]
+Pred distribution: [44, 36, 20, 0]
+Epoch [9/10], Step [200/1472], Loss: 0.8257
+Label distribution: [42, 33, 25, 0]
+Pred distribution: [43, 33, 24, 0]
+Epoch [9/10], Step [300/1472], Loss: 0.8659
+Label distribution: [31, 33, 36, 0]
+Pred distribution: [35, 34, 31, 0]
+Epoch [9/10], Step [400/1472], Loss: 0.8642
+Label distribution: [41, 23, 36, 0]
+Pred distribution: [37, 24, 39, 0]
+Epoch [9/10], Step [500/1472], Loss: 0.8814
+Label distribution: [27, 39, 34, 0]
+Pred distribution: [31, 39, 30, 0]
+Epoch [9/10], Step [600/1472], Loss: 0.8688
+Label distribution: [32, 33, 35, 0]
+Pred distribution: [39, 33, 28, 0]
+Epoch [9/10], Step [700/1472], Loss: 0.8928
+Label distribution: [34, 32, 34, 0]
+Pred distribution: [37, 31, 32, 0]
+Epoch [9/10], Step [800/1472], Loss: 0.8509
+Label distribution: [32, 32, 36, 0]
+Pred distribution: [28, 32, 40, 0]
+Epoch [9/10], Step [900/1472], Loss: 0.8877
+Label distribution: [32, 31, 37, 0]
+Pred distribution: [35, 31, 34, 0]
+Epoch [9/10], Step [1000/1472], Loss: 0.8564
+Label distribution: [34, 38, 28, 0]
+Pred distribution: [31, 41, 28, 0]
+Epoch [9/10], Step [1100/1472], Loss: 0.8803
+Label distribution: [37, 35, 28, 0]
+Pred distribution: [39, 32, 29, 0]
+Epoch [9/10], Step [1200/1472], Loss: 0.8498
+Label distribution: [34, 25, 41, 0]
+Pred distribution: [33, 25, 42, 0]
+Epoch [9/10], Step [1300/1472], Loss: 0.8551
+Label distribution: [35, 35, 30, 0]
+Pred distribution: [39, 34, 27, 0]
+Epoch [9/10], Step [1400/1472], Loss: 0.8509
+Label distribution: [26, 36, 38, 0]
+Pred distribution: [31, 36, 33, 0]
+Accuracy per class: [1. 0. 0. 0.]
+Average accuracy: 0.25
+Time elapsed: 1595.1036138534546 seconds
+Epoch [10/10], Step [100/1472], Loss: 0.8835
+Label distribution: [28, 44, 28, 0]
+Pred distribution: [30, 46, 24, 0]
+Epoch [10/10], Step [200/1472], Loss: 0.8075
+Label distribution: [29, 39, 32, 0]
+Pred distribution: [28, 39, 33, 0]
+Epoch [10/10], Step [300/1472], Loss: 0.8780
+Label distribution: [32, 33, 35, 0]
+Pred distribution: [34, 34, 32, 0]
+Epoch [10/10], Step [400/1472], Loss: 0.8341
+Label distribution: [31, 41, 28, 0]
+Pred distribution: [34, 40, 26, 0]
+Epoch [10/10], Step [500/1472], Loss: 0.8646
+Label distribution: [30, 23, 47, 0]
+Pred distribution: [37, 20, 43, 0]
+Epoch [10/10], Step [600/1472], Loss: 0.9324
+Label distribution: [44, 19, 37, 0]
+Pred distribution: [49, 22, 29, 0]
+Epoch [10/10], Step [700/1472], Loss: 0.8951
+Label distribution: [43, 29, 28, 0]
+Pred distribution: [42, 31, 27, 0]
+Epoch [10/10], Step [800/1472], Loss: 0.9156
+Label distribution: [41, 30, 29, 0]
+Pred distribution: [44, 30, 26, 0]
+Epoch [10/10], Step [900/1472], Loss: 0.8617
+Label distribution: [35, 34, 31, 0]
+Pred distribution: [42, 33, 25, 0]
+Epoch [10/10], Step [1000/1472], Loss: 0.8370
+Label distribution: [23, 41, 36, 0]
+Pred distribution: [23, 41, 36, 0]
+Epoch [10/10], Step [1100/1472], Loss: 0.8363
+Label distribution: [33, 36, 31, 0]
+Pred distribution: [30, 38, 32, 0]
+Epoch [10/10], Step [1200/1472], Loss: 0.8671
+Label distribution: [38, 31, 31, 0]
+Pred distribution: [41, 33, 26, 0]
+Epoch [10/10], Step [1300/1472], Loss: 0.8523
+Label distribution: [39, 32, 29, 0]
+Pred distribution: [37, 33, 30, 0]
+Epoch [10/10], Step [1400/1472], Loss: 0.8543
+Label distribution: [37, 32, 31, 0]
+Pred distribution: [38, 34, 28, 0]
+Accuracy per class: [1. 0. 0. 0.]
+Average accuracy: 0.25
+Time elapsed: 1797.330719947815 seconds
+
+
+
+
+
+Epoch [1/10], Step [32/1472], Loss: 0.0422
+Label distribution: [13, 7, 12, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.21875
+Epoch [1/10], Step [64/1472], Loss: 0.0387
+Label distribution: [14, 7, 11, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.21875
+Epoch [1/10], Step [96/1472], Loss: 0.0462
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.3125
+Epoch [1/10], Step [128/1472], Loss: 0.0460
+Label distribution: [10, 11, 11, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.34375
+Epoch [1/10], Step [160/1472], Loss: 0.0385
+Label distribution: [8, 11, 13, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.34375
+Epoch [1/10], Step [192/1472], Loss: 0.0408
+Label distribution: [10, 11, 11, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.34375
+Epoch [1/10], Step [224/1472], Loss: 0.0456
+Label distribution: [8, 13, 11, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.40625
+Epoch [1/10], Step [256/1472], Loss: 0.0460
+Label distribution: [14, 12, 6, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.375
+Epoch [1/10], Step [288/1472], Loss: 0.0460
+Label distribution: [12, 10, 10, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.3125
+Epoch [1/10], Step [320/1472], Loss: 0.0459
+Label distribution: [12, 10, 10, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.3125
+Epoch [1/10], Step [352/1472], Loss: 0.0381
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.3125
+Epoch [1/10], Step [384/1472], Loss: 0.0383
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.28125
+Epoch [1/10], Step [416/1472], Loss: 0.0454
+Label distribution: [12, 11, 9, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.34375
+Epoch [1/10], Step [448/1472], Loss: 0.0454
+Label distribution: [10, 14, 8, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.4375
+Epoch [1/10], Step [480/1472], Loss: 0.0456
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.375
+Epoch [1/10], Step [512/1472], Loss: 0.0375
+Label distribution: [10, 14, 8, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.4375
+Epoch [1/10], Step [544/1472], Loss: 0.0405
+Label distribution: [16, 10, 6, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.3125
+Epoch [1/10], Step [576/1472], Loss: 0.0398
+Label distribution: [11, 13, 8, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.40625
+Epoch [1/10], Step [608/1472], Loss: 0.0403
+Label distribution: [7, 13, 12, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.40625
+Epoch [1/10], Step [640/1472], Loss: 0.0366
+Label distribution: [5, 16, 11, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.5
+Epoch [1/10], Step [672/1472], Loss: 0.0409
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.28125
+Epoch [1/10], Step [704/1472], Loss: 0.0405
+Label distribution: [15, 8, 9, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.25
+Epoch [1/10], Step [736/1472], Loss: 0.0405
+Label distribution: [9, 8, 15, 0]
+Pred distribution: [0, 32, 0, 0]
+Accuracy: 0.25
+Epoch [1/10], Step [768/1472], Loss: 0.0448
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [1, 31, 0, 0]
+Accuracy: 0.28125
+Epoch [1/10], Step [800/1472], Loss: 0.0403
+Label distribution: [14, 7, 11, 0]
+Pred distribution: [12, 20, 0, 0]
+Accuracy: 0.3125
+Epoch [1/10], Step [832/1472], Loss: 0.0397
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [14, 18, 0, 0]
+Accuracy: 0.40625
+Epoch [1/10], Step [864/1472], Loss: 0.0399
+Label distribution: [9, 11, 12, 0]
+Pred distribution: [22, 10, 0, 0]
+Accuracy: 0.46875
+Epoch [1/10], Step [896/1472], Loss: 0.0422
+Label distribution: [12, 11, 9, 0]
+Pred distribution: [22, 10, 0, 0]
+Accuracy: 0.5625
+Epoch [1/10], Step [928/1472], Loss: 0.0408
+Label distribution: [8, 9, 15, 0]
+Pred distribution: [20, 11, 1, 0]
+Accuracy: 0.34375
+Epoch [1/10], Step [960/1472], Loss: 0.0378
+Label distribution: [14, 6, 12, 0]
+Pred distribution: [13, 2, 17, 0]
+Accuracy: 0.5625
+Epoch [1/10], Step [992/1472], Loss: 0.0441
+Label distribution: [8, 9, 15, 0]
+Pred distribution: [11, 4, 17, 0]
+Accuracy: 0.5625
+Epoch [1/10], Step [1024/1472], Loss: 0.0410
+Label distribution: [12, 11, 9, 0]
+Pred distribution: [7, 5, 20, 0]
+Accuracy: 0.5
+Epoch [1/10], Step [1056/1472], Loss: 0.0407
+Label distribution: [8, 15, 9, 0]
+Pred distribution: [4, 18, 10, 0]
+Accuracy: 0.625
+Epoch [1/10], Step [1088/1472], Loss: 0.0412
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [2, 18, 12, 0]
+Accuracy: 0.59375
+Epoch [1/10], Step [1120/1472], Loss: 0.0377
+Label distribution: [12, 12, 8, 0]
+Pred distribution: [0, 14, 18, 0]
+Accuracy: 0.5
+Epoch [1/10], Step [1152/1472], Loss: 0.0419
+Label distribution: [12, 8, 12, 0]
+Pred distribution: [2, 12, 18, 0]
+Accuracy: 0.625
+Epoch [1/10], Step [1184/1472], Loss: 0.0423
+Label distribution: [12, 13, 7, 0]
+Pred distribution: [3, 15, 14, 0]
+Accuracy: 0.59375
+Epoch [1/10], Step [1216/1472], Loss: 0.0403
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [4, 13, 15, 0]
+Accuracy: 0.59375
+Epoch [1/10], Step [1248/1472], Loss: 0.0423
+Label distribution: [13, 12, 7, 0]
+Pred distribution: [0, 19, 13, 0]
+Accuracy: 0.5625
+Epoch [1/10], Step [1280/1472], Loss: 0.0352
+Label distribution: [9, 8, 15, 0]
+Pred distribution: [1, 11, 20, 0]
+Accuracy: 0.6875
+Epoch [1/10], Step [1312/1472], Loss: 0.0425
+Label distribution: [11, 8, 13, 0]
+Pred distribution: [0, 6, 26, 0]
+Accuracy: 0.5625
+Epoch [1/10], Step [1344/1472], Loss: 0.0338
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [0, 10, 22, 0]
+Accuracy: 0.5
+Epoch [1/10], Step [1376/1472], Loss: 0.0378
+Label distribution: [12, 7, 13, 0]
+Pred distribution: [0, 9, 23, 0]
+Accuracy: 0.59375
+Epoch [1/10], Step [1408/1472], Loss: 0.0442
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [0, 10, 22, 0]
+Accuracy: 0.59375
+Epoch [1/10], Step [1440/1472], Loss: 0.0444
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [0, 12, 20, 0]
+Accuracy: 0.65625
+Epoch [1/10], Step [1472/1472], Loss: 0.0363
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [0, 18, 14, 0]
+Accuracy: 0.5625
+Accuracy per class: [0.06666667 0.         1.         0.        ]
+Average accuracy: 0.26666666666666666
+Time elapsed: 82.6549243927002 seconds
+Epoch [2/10], Step [32/1472], Loss: 0.0328
+Label distribution: [15, 6, 11, 0]
+Pred distribution: [0, 13, 19, 0]
+Accuracy: 0.5
+Epoch [2/10], Step [64/1472], Loss: 0.0317
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [0, 10, 22, 0]
+Accuracy: 0.5
+Epoch [2/10], Step [96/1472], Loss: 0.0337
+Label distribution: [15, 8, 9, 0]
+Pred distribution: [2, 13, 17, 0]
+Accuracy: 0.59375
+Epoch [2/10], Step [128/1472], Loss: 0.0318
+Label distribution: [10, 7, 15, 0]
+Pred distribution: [0, 8, 24, 0]
+Accuracy: 0.6875
+Epoch [2/10], Step [160/1472], Loss: 0.0328
+Label distribution: [13, 10, 9, 0]
+Pred distribution: [1, 14, 17, 0]
+Accuracy: 0.625
+Epoch [2/10], Step [192/1472], Loss: 0.0423
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [1, 13, 18, 0]
+Accuracy: 0.59375
+Epoch [2/10], Step [224/1472], Loss: 0.0423
+Label distribution: [10, 13, 9, 0]
+Pred distribution: [1, 14, 17, 0]
+Accuracy: 0.71875
+Epoch [2/10], Step [256/1472], Loss: 0.0357
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [0, 19, 13, 0]
+Accuracy: 0.59375
+Epoch [2/10], Step [288/1472], Loss: 0.0301
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [1, 11, 20, 0]
+Accuracy: 0.625
+Epoch [2/10], Step [320/1472], Loss: 0.0486
+Label distribution: [8, 13, 11, 0]
+Pred distribution: [0, 16, 16, 0]
+Accuracy: 0.6875
+Epoch [2/10], Step [352/1472], Loss: 0.0338
+Label distribution: [8, 8, 16, 0]
+Pred distribution: [0, 9, 23, 0]
+Accuracy: 0.75
+Epoch [2/10], Step [384/1472], Loss: 0.0300
+Label distribution: [13, 11, 8, 0]
+Pred distribution: [0, 17, 15, 0]
+Accuracy: 0.59375
+Epoch [2/10], Step [416/1472], Loss: 0.0306
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [0, 14, 18, 0]
+Accuracy: 0.65625
+Epoch [2/10], Step [448/1472], Loss: 0.0288
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [0, 11, 21, 0]
+Accuracy: 0.65625
+Epoch [2/10], Step [480/1472], Loss: 0.0474
+Label distribution: [7, 12, 13, 0]
+Pred distribution: [0, 12, 20, 0]
+Accuracy: 0.78125
+Epoch [2/10], Step [512/1472], Loss: 0.0297
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [0, 9, 23, 0]
+Accuracy: 0.59375
+Epoch [2/10], Step [544/1472], Loss: 0.0417
+Label distribution: [12, 10, 10, 0]
+Pred distribution: [0, 16, 16, 0]
+Accuracy: 0.46875
+Epoch [2/10], Step [576/1472], Loss: 0.0316
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [0, 17, 15, 0]
+Accuracy: 0.59375
+Epoch [2/10], Step [608/1472], Loss: 0.0296
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [0, 15, 17, 0]
+Accuracy: 0.5625
+Epoch [2/10], Step [640/1472], Loss: 0.0480
+Label distribution: [12, 7, 13, 0]
+Pred distribution: [0, 11, 21, 0]
+Accuracy: 0.53125
+Epoch [2/10], Step [672/1472], Loss: 0.0259
+Label distribution: [9, 8, 15, 0]
+Pred distribution: [0, 8, 24, 0]
+Accuracy: 0.6875
+Epoch [2/10], Step [704/1472], Loss: 0.0337
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [2, 8, 22, 0]
+Accuracy: 0.65625
+Epoch [2/10], Step [736/1472], Loss: 0.0254
+Label distribution: [10, 13, 9, 0]
+Pred distribution: [0, 15, 17, 0]
+Accuracy: 0.65625
+Epoch [2/10], Step [768/1472], Loss: 0.0404
+Label distribution: [17, 6, 9, 0]
+Pred distribution: [0, 15, 17, 0]
+Accuracy: 0.375
+Epoch [2/10], Step [800/1472], Loss: 0.0397
+Label distribution: [12, 7, 13, 0]
+Pred distribution: [0, 7, 25, 0]
+Accuracy: 0.625
+Epoch [2/10], Step [832/1472], Loss: 0.0513
+Label distribution: [17, 8, 7, 0]
+Pred distribution: [4, 13, 15, 0]
+Accuracy: 0.46875
+Epoch [2/10], Step [864/1472], Loss: 0.0391
+Label distribution: [12, 10, 10, 0]
+Pred distribution: [10, 13, 9, 0]
+Accuracy: 0.5625
+Epoch [2/10], Step [896/1472], Loss: 0.0368
+Label distribution: [14, 10, 8, 0]
+Pred distribution: [14, 10, 8, 0]
+Accuracy: 0.8125
+Epoch [2/10], Step [928/1472], Loss: 0.0262
+Label distribution: [12, 15, 5, 0]
+Pred distribution: [16, 16, 0, 0]
+Accuracy: 0.84375
+Epoch [2/10], Step [960/1472], Loss: 0.0257
+Label distribution: [13, 10, 9, 0]
+Pred distribution: [18, 12, 2, 0]
+Accuracy: 0.71875
+Epoch [2/10], Step [992/1472], Loss: 0.0268
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [20, 11, 1, 0]
+Accuracy: 0.625
+Epoch [2/10], Step [1024/1472], Loss: 0.0384
+Label distribution: [16, 9, 7, 0]
+Pred distribution: [18, 11, 3, 0]
+Accuracy: 0.78125
+Epoch [2/10], Step [1056/1472], Loss: 0.0347
+Label distribution: [9, 8, 15, 0]
+Pred distribution: [16, 6, 10, 0]
+Accuracy: 0.65625
+Epoch [2/10], Step [1088/1472], Loss: 0.0360
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [7, 12, 13, 0]
+Accuracy: 0.75
+Epoch [2/10], Step [1120/1472], Loss: 0.0314
+Label distribution: [7, 13, 12, 0]
+Pred distribution: [1, 14, 17, 0]
+Accuracy: 0.8125
+Epoch [2/10], Step [1152/1472], Loss: 0.0254
+Label distribution: [12, 11, 9, 0]
+Pred distribution: [3, 11, 18, 0]
+Accuracy: 0.71875
+Epoch [2/10], Step [1184/1472], Loss: 0.0319
+Label distribution: [13, 5, 14, 0]
+Pred distribution: [8, 7, 17, 0]
+Accuracy: 0.625
+Epoch [2/10], Step [1216/1472], Loss: 0.0468
+Label distribution: [9, 7, 16, 0]
+Pred distribution: [2, 8, 22, 0]
+Accuracy: 0.6875
+Epoch [2/10], Step [1248/1472], Loss: 0.0257
+Label distribution: [14, 8, 10, 0]
+Pred distribution: [8, 10, 14, 0]
+Accuracy: 0.625
+Epoch [2/10], Step [1280/1472], Loss: 0.0429
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [15, 8, 9, 0]
+Accuracy: 0.625
+Epoch [2/10], Step [1312/1472], Loss: 0.0408
+Label distribution: [13, 9, 10, 0]
+Pred distribution: [7, 11, 14, 0]
+Accuracy: 0.59375
+Epoch [2/10], Step [1344/1472], Loss: 0.0415
+Label distribution: [9, 8, 15, 0]
+Pred distribution: [9, 10, 13, 0]
+Accuracy: 0.71875
+Epoch [2/10], Step [1376/1472], Loss: 0.0299
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [0, 11, 21, 0]
+Accuracy: 0.65625
+Epoch [2/10], Step [1408/1472], Loss: 0.0337
+Label distribution: [12, 11, 9, 0]
+Pred distribution: [7, 11, 14, 0]
+Accuracy: 0.75
+Epoch [2/10], Step [1440/1472], Loss: 0.0389
+Label distribution: [8, 12, 12, 0]
+Pred distribution: [5, 13, 14, 0]
+Accuracy: 0.71875
+Epoch [2/10], Step [1472/1472], Loss: 0.0373
+Label distribution: [17, 8, 7, 0]
+Pred distribution: [9, 10, 13, 0]
+Accuracy: 0.5625
+Accuracy per class: [0.06666667 0.         1.         0.        ]
+Average accuracy: 0.26666666666666666
+Time elapsed: 168.25996041297913 seconds
+Epoch [3/10], Step [32/1472], Loss: 0.0330
+Label distribution: [14, 7, 11, 0]
+Pred distribution: [19, 6, 7, 0]
+Accuracy: 0.78125
+Epoch [3/10], Step [64/1472], Loss: 0.0398
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [14, 9, 9, 0]
+Accuracy: 0.78125
+Epoch [3/10], Step [96/1472], Loss: 0.0522
+Label distribution: [9, 11, 12, 0]
+Pred distribution: [4, 14, 14, 0]
+Accuracy: 0.6875
+Epoch [3/10], Step [128/1472], Loss: 0.0377
+Label distribution: [14, 10, 8, 0]
+Pred distribution: [9, 11, 12, 0]
+Accuracy: 0.6875
+Epoch [3/10], Step [160/1472], Loss: 0.0263
+Label distribution: [12, 11, 9, 0]
+Pred distribution: [13, 13, 6, 0]
+Accuracy: 0.78125
+Epoch [3/10], Step [192/1472], Loss: 0.0302
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [13, 13, 6, 0]
+Accuracy: 0.8125
+Epoch [3/10], Step [224/1472], Loss: 0.0368
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [12, 9, 11, 0]
+Accuracy: 0.71875
+Epoch [3/10], Step [256/1472], Loss: 0.0390
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [13, 9, 10, 0]
+Accuracy: 0.59375
+Epoch [3/10], Step [288/1472], Loss: 0.0423
+Label distribution: [11, 7, 14, 0]
+Pred distribution: [10, 11, 11, 0]
+Accuracy: 0.625
+Epoch [3/10], Step [320/1472], Loss: 0.0351
+Label distribution: [7, 14, 11, 0]
+Pred distribution: [4, 14, 14, 0]
+Accuracy: 0.84375
+Epoch [3/10], Step [352/1472], Loss: 0.0296
+Label distribution: [11, 11, 10, 0]
+Pred distribution: [12, 12, 8, 0]
+Accuracy: 0.78125
+Epoch [3/10], Step [384/1472], Loss: 0.0275
+Label distribution: [4, 14, 14, 0]
+Pred distribution: [2, 16, 14, 0]
+Accuracy: 0.875
+Epoch [3/10], Step [416/1472], Loss: 0.0261
+Label distribution: [10, 15, 7, 0]
+Pred distribution: [5, 14, 13, 0]
+Accuracy: 0.8125
+Epoch [3/10], Step [448/1472], Loss: 0.0248
+Label distribution: [14, 8, 10, 0]
+Pred distribution: [13, 10, 9, 0]
+Accuracy: 0.6875
+Epoch [3/10], Step [480/1472], Loss: 0.0311
+Label distribution: [14, 11, 7, 0]
+Pred distribution: [14, 12, 6, 0]
+Accuracy: 0.75
+Epoch [3/10], Step [512/1472], Loss: 0.0284
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [21, 11, 0, 0]
+Accuracy: 0.5625
+Epoch [3/10], Step [544/1472], Loss: 0.0414
+Label distribution: [9, 11, 12, 0]
+Pred distribution: [13, 11, 8, 0]
+Accuracy: 0.8125
+Epoch [3/10], Step [576/1472], Loss: 0.0344
+Label distribution: [7, 10, 15, 0]
+Pred distribution: [4, 12, 16, 0]
+Accuracy: 0.78125
+Epoch [3/10], Step [608/1472], Loss: 0.0243
+Label distribution: [10, 9, 13, 0]
+Pred distribution: [9, 7, 16, 0]
+Accuracy: 0.6875
+Epoch [3/10], Step [640/1472], Loss: 0.0249
+Label distribution: [10, 7, 15, 0]
+Pred distribution: [9, 5, 18, 0]
+Accuracy: 0.71875
+Epoch [3/10], Step [672/1472], Loss: 0.0273
+Label distribution: [12, 12, 8, 0]
+Pred distribution: [11, 15, 6, 0]
+Accuracy: 0.71875
+Epoch [3/10], Step [704/1472], Loss: 0.0242
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [9, 13, 10, 0]
+Accuracy: 0.78125
+Epoch [3/10], Step [736/1472], Loss: 0.0357
+Label distribution: [7, 9, 16, 0]
+Pred distribution: [7, 9, 16, 0]
+Accuracy: 0.78125
+Epoch [3/10], Step [768/1472], Loss: 0.0263
+Label distribution: [9, 7, 16, 0]
+Pred distribution: [1, 8, 23, 0]
+Accuracy: 0.65625
+Epoch [3/10], Step [800/1472], Loss: 0.0413
+Label distribution: [10, 14, 8, 0]
+Pred distribution: [2, 13, 17, 0]
+Accuracy: 0.625
+Epoch [3/10], Step [832/1472], Loss: 0.0300
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [3, 16, 13, 0]
+Accuracy: 0.625
+Epoch [3/10], Step [864/1472], Loss: 0.0331
+Label distribution: [11, 11, 10, 0]
+Pred distribution: [8, 12, 12, 0]
+Accuracy: 0.90625
+Epoch [3/10], Step [896/1472], Loss: 0.0318
+Label distribution: [14, 8, 10, 0]
+Pred distribution: [14, 9, 9, 0]
+Accuracy: 0.8125
+Epoch [3/10], Step [928/1472], Loss: 0.0493
+Label distribution: [13, 11, 8, 0]
+Pred distribution: [11, 11, 10, 0]
+Accuracy: 0.75
+Epoch [3/10], Step [960/1472], Loss: 0.0459
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [19, 8, 5, 0]
+Accuracy: 0.65625
+Epoch [3/10], Step [992/1472], Loss: 0.0338
+Label distribution: [9, 15, 8, 0]
+Pred distribution: [10, 15, 7, 0]
+Accuracy: 0.96875
+Epoch [3/10], Step [1024/1472], Loss: 0.0487
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [9, 14, 9, 0]
+Accuracy: 0.6875
+Epoch [3/10], Step [1056/1472], Loss: 0.0461
+Label distribution: [5, 15, 12, 0]
+Pred distribution: [3, 18, 11, 0]
+Accuracy: 0.71875
+Epoch [3/10], Step [1088/1472], Loss: 0.0364
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [4, 12, 16, 0]
+Accuracy: 0.6875
+Epoch [3/10], Step [1120/1472], Loss: 0.0315
+Label distribution: [4, 8, 20, 0]
+Pred distribution: [6, 8, 18, 0]
+Accuracy: 0.8125
+Epoch [3/10], Step [1152/1472], Loss: 0.0263
+Label distribution: [6, 15, 11, 0]
+Pred distribution: [2, 15, 15, 0]
+Accuracy: 0.875
+Epoch [3/10], Step [1184/1472], Loss: 0.0268
+Label distribution: [8, 14, 10, 0]
+Pred distribution: [5, 14, 13, 0]
+Accuracy: 0.84375
+Epoch [3/10], Step [1216/1472], Loss: 0.0346
+Label distribution: [10, 9, 13, 0]
+Pred distribution: [7, 10, 15, 0]
+Accuracy: 0.84375
+Epoch [3/10], Step [1248/1472], Loss: 0.0382
+Label distribution: [11, 8, 13, 0]
+Pred distribution: [7, 10, 15, 0]
+Accuracy: 0.6875
+Epoch [3/10], Step [1280/1472], Loss: 0.0267
+Label distribution: [14, 7, 11, 0]
+Pred distribution: [12, 8, 12, 0]
+Accuracy: 0.75
+Epoch [3/10], Step [1312/1472], Loss: 0.0241
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [7, 9, 16, 0]
+Accuracy: 0.625
+Epoch [3/10], Step [1344/1472], Loss: 0.0240
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [13, 10, 9, 0]
+Accuracy: 0.78125
+Epoch [3/10], Step [1376/1472], Loss: 0.0297
+Label distribution: [13, 10, 9, 0]
+Pred distribution: [11, 12, 9, 0]
+Accuracy: 0.84375
+Epoch [3/10], Step [1408/1472], Loss: 0.0376
+Label distribution: [7, 11, 14, 0]
+Pred distribution: [7, 12, 13, 0]
+Accuracy: 0.875
+Epoch [3/10], Step [1440/1472], Loss: 0.0405
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [8, 12, 12, 0]
+Accuracy: 0.75
+Epoch [3/10], Step [1472/1472], Loss: 0.0491
+Label distribution: [10, 11, 11, 0]
+Pred distribution: [13, 12, 7, 0]
+Accuracy: 0.78125
+Accuracy per class: [0.6        0.06666667 0.6        0.        ]
+Average accuracy: 0.31666666666666665
+Time elapsed: 253.38128638267517 seconds
+Epoch [4/10], Step [32/1472], Loss: 0.0244
+Label distribution: [12, 12, 8, 0]
+Pred distribution: [6, 14, 12, 0]
+Accuracy: 0.8125
+Epoch [4/10], Step [64/1472], Loss: 0.0350
+Label distribution: [10, 9, 13, 0]
+Pred distribution: [12, 12, 8, 0]
+Accuracy: 0.75
+Epoch [4/10], Step [96/1472], Loss: 0.0263
+Label distribution: [8, 11, 13, 0]
+Pred distribution: [10, 14, 8, 0]
+Accuracy: 0.75
+Epoch [4/10], Step [128/1472], Loss: 0.0240
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [11, 12, 9, 0]
+Accuracy: 0.75
+Epoch [4/10], Step [160/1472], Loss: 0.0493
+Label distribution: [15, 8, 9, 0]
+Pred distribution: [9, 10, 13, 0]
+Accuracy: 0.75
+Epoch [4/10], Step [192/1472], Loss: 0.0294
+Label distribution: [11, 8, 13, 0]
+Pred distribution: [8, 7, 17, 0]
+Accuracy: 0.78125
+Epoch [4/10], Step [224/1472], Loss: 0.0509
+Label distribution: [9, 13, 10, 0]
+Pred distribution: [12, 14, 6, 0]
+Accuracy: 0.75
+Epoch [4/10], Step [256/1472], Loss: 0.0294
+Label distribution: [12, 14, 6, 0]
+Pred distribution: [8, 15, 9, 0]
+Accuracy: 0.65625
+Epoch [4/10], Step [288/1472], Loss: 0.0330
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [13, 10, 9, 0]
+Accuracy: 0.78125
+Epoch [4/10], Step [320/1472], Loss: 0.0300
+Label distribution: [15, 11, 6, 0]
+Pred distribution: [12, 12, 8, 0]
+Accuracy: 0.90625
+Epoch [4/10], Step [352/1472], Loss: 0.0308
+Label distribution: [8, 8, 16, 0]
+Pred distribution: [17, 10, 5, 0]
+Accuracy: 0.59375
+Epoch [4/10], Step [384/1472], Loss: 0.0261
+Label distribution: [12, 6, 14, 0]
+Pred distribution: [14, 8, 10, 0]
+Accuracy: 0.65625
+Epoch [4/10], Step [416/1472], Loss: 0.0260
+Label distribution: [10, 8, 14, 0]
+Pred distribution: [14, 8, 10, 0]
+Accuracy: 0.6875
+Epoch [4/10], Step [448/1472], Loss: 0.0263
+Label distribution: [6, 17, 9, 0]
+Pred distribution: [6, 16, 10, 0]
+Accuracy: 0.875
+Epoch [4/10], Step [480/1472], Loss: 0.0322
+Label distribution: [13, 7, 12, 0]
+Pred distribution: [11, 8, 13, 0]
+Accuracy: 0.75
+Epoch [4/10], Step [512/1472], Loss: 0.0261
+Label distribution: [9, 14, 9, 0]
+Pred distribution: [6, 19, 7, 0]
+Accuracy: 0.84375
+Epoch [4/10], Step [544/1472], Loss: 0.0270
+Label distribution: [18, 6, 8, 0]
+Pred distribution: [18, 7, 7, 0]
+Accuracy: 0.8125
+Epoch [4/10], Step [576/1472], Loss: 0.0239
+Label distribution: [7, 13, 12, 0]
+Pred distribution: [11, 13, 8, 0]
+Accuracy: 0.8125
+Epoch [4/10], Step [608/1472], Loss: 0.0294
+Label distribution: [18, 7, 7, 0]
+Pred distribution: [17, 7, 8, 0]
+Accuracy: 0.90625
+Epoch [4/10], Step [640/1472], Loss: 0.0242
+Label distribution: [10, 16, 6, 0]
+Pred distribution: [9, 17, 6, 0]
+Accuracy: 0.75
+Epoch [4/10], Step [672/1472], Loss: 0.0390
+Label distribution: [7, 15, 10, 0]
+Pred distribution: [10, 16, 6, 0]
+Accuracy: 0.8125
+Epoch [4/10], Step [704/1472], Loss: 0.0338
+Label distribution: [12, 6, 14, 0]
+Pred distribution: [15, 7, 10, 0]
+Accuracy: 0.75
+Epoch [4/10], Step [736/1472], Loss: 0.0268
+Label distribution: [13, 7, 12, 0]
+Pred distribution: [9, 8, 15, 0]
+Accuracy: 0.75
+Epoch [4/10], Step [768/1472], Loss: 0.0272
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [7, 9, 16, 0]
+Accuracy: 0.8125
+Epoch [4/10], Step [800/1472], Loss: 0.0245
+Label distribution: [9, 16, 7, 0]
+Pred distribution: [9, 17, 6, 0]
+Accuracy: 0.84375
+Epoch [4/10], Step [832/1472], Loss: 0.0258
+Label distribution: [14, 9, 9, 0]
+Pred distribution: [15, 11, 6, 0]
+Accuracy: 0.78125
+Epoch [4/10], Step [864/1472], Loss: 0.0255
+Label distribution: [13, 15, 4, 0]
+Pred distribution: [17, 14, 1, 0]
+Accuracy: 0.8125
+Epoch [4/10], Step [896/1472], Loss: 0.0261
+Label distribution: [11, 11, 10, 0]
+Pred distribution: [19, 11, 2, 0]
+Accuracy: 0.6875
+Epoch [4/10], Step [928/1472], Loss: 0.0259
+Label distribution: [13, 7, 12, 0]
+Pred distribution: [16, 7, 9, 0]
+Accuracy: 0.84375
+Epoch [4/10], Step [960/1472], Loss: 0.0479
+Label distribution: [10, 11, 11, 0]
+Pred distribution: [10, 9, 13, 0]
+Accuracy: 0.8125
+Epoch [4/10], Step [992/1472], Loss: 0.0239
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [9, 10, 13, 0]
+Accuracy: 0.78125
+Epoch [4/10], Step [1024/1472], Loss: 0.0239
+Label distribution: [7, 14, 11, 0]
+Pred distribution: [3, 14, 15, 0]
+Accuracy: 0.8125
+Epoch [4/10], Step [1056/1472], Loss: 0.0273
+Label distribution: [9, 17, 6, 0]
+Pred distribution: [12, 15, 5, 0]
+Accuracy: 0.84375
+Epoch [4/10], Step [1088/1472], Loss: 0.0256
+Label distribution: [8, 9, 15, 0]
+Pred distribution: [10, 11, 11, 0]
+Accuracy: 0.78125
+Epoch [4/10], Step [1120/1472], Loss: 0.0249
+Label distribution: [12, 10, 10, 0]
+Pred distribution: [14, 11, 7, 0]
+Accuracy: 0.8125
+Epoch [4/10], Step [1152/1472], Loss: 0.0324
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [7, 11, 14, 0]
+Accuracy: 0.75
+Epoch [4/10], Step [1184/1472], Loss: 0.0239
+Label distribution: [8, 11, 13, 0]
+Pred distribution: [7, 12, 13, 0]
+Accuracy: 0.84375
+Epoch [4/10], Step [1216/1472], Loss: 0.0247
+Label distribution: [12, 12, 8, 0]
+Pred distribution: [11, 13, 8, 0]
+Accuracy: 0.84375
+Epoch [4/10], Step [1248/1472], Loss: 0.0286
+Label distribution: [13, 10, 9, 0]
+Pred distribution: [12, 11, 9, 0]
+Accuracy: 0.90625
+Epoch [4/10], Step [1280/1472], Loss: 0.0467
+Label distribution: [10, 11, 11, 0]
+Pred distribution: [13, 10, 9, 0]
+Accuracy: 0.71875
+Epoch [4/10], Step [1312/1472], Loss: 0.0243
+Label distribution: [6, 15, 11, 0]
+Pred distribution: [6, 15, 11, 0]
+Accuracy: 0.8125
+Epoch [4/10], Step [1344/1472], Loss: 0.0268
+Label distribution: [6, 17, 9, 0]
+Pred distribution: [10, 18, 4, 0]
+Accuracy: 0.84375
+Epoch [4/10], Step [1376/1472], Loss: 0.0261
+Label distribution: [8, 7, 17, 0]
+Pred distribution: [7, 8, 17, 0]
+Accuracy: 0.84375
+Epoch [4/10], Step [1408/1472], Loss: 0.0515
+Label distribution: [10, 13, 9, 0]
+Pred distribution: [6, 13, 13, 0]
+Accuracy: 0.71875
+Epoch [4/10], Step [1440/1472], Loss: 0.0447
+Label distribution: [14, 8, 10, 0]
+Pred distribution: [14, 8, 10, 0]
+Accuracy: 0.75
+Epoch [4/10], Step [1472/1472], Loss: 0.0459
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [9, 8, 15, 0]
+Accuracy: 0.6875
+Accuracy per class: [0. 0. 1. 0.]
+Average accuracy: 0.25
+Time elapsed: 338.9165074825287 seconds
+Epoch [5/10], Step [32/1472], Loss: 0.0256
+Label distribution: [14, 10, 8, 0]
+Pred distribution: [10, 10, 12, 0]
+Accuracy: 0.75
+Epoch [5/10], Step [64/1472], Loss: 0.0249
+Label distribution: [14, 5, 13, 0]
+Pred distribution: [17, 5, 10, 0]
+Accuracy: 0.84375
+Epoch [5/10], Step [96/1472], Loss: 0.0535
+Label distribution: [12, 7, 13, 0]
+Pred distribution: [12, 9, 11, 0]
+Accuracy: 0.6875
+Epoch [5/10], Step [128/1472], Loss: 0.0260
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [13, 8, 11, 0]
+Accuracy: 0.6875
+Epoch [5/10], Step [160/1472], Loss: 0.0238
+Label distribution: [10, 16, 6, 0]
+Pred distribution: [9, 16, 7, 0]
+Accuracy: 0.84375
+Epoch [5/10], Step [192/1472], Loss: 0.0250
+Label distribution: [19, 5, 8, 0]
+Pred distribution: [17, 5, 10, 0]
+Accuracy: 0.875
+Epoch [5/10], Step [224/1472], Loss: 0.0243
+Label distribution: [7, 11, 14, 0]
+Pred distribution: [9, 12, 11, 0]
+Accuracy: 0.875
+Epoch [5/10], Step [256/1472], Loss: 0.0474
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [9, 8, 15, 0]
+Accuracy: 0.65625
+Epoch [5/10], Step [288/1472], Loss: 0.0245
+Label distribution: [11, 7, 14, 0]
+Pred distribution: [10, 8, 14, 0]
+Accuracy: 0.78125
+Epoch [5/10], Step [320/1472], Loss: 0.0248
+Label distribution: [7, 12, 13, 0]
+Pred distribution: [8, 10, 14, 0]
+Accuracy: 0.8125
+Epoch [5/10], Step [352/1472], Loss: 0.0246
+Label distribution: [8, 13, 11, 0]
+Pred distribution: [7, 14, 11, 0]
+Accuracy: 0.71875
+Epoch [5/10], Step [384/1472], Loss: 0.0263
+Label distribution: [7, 14, 11, 0]
+Pred distribution: [9, 13, 10, 0]
+Accuracy: 0.8125
+Epoch [5/10], Step [416/1472], Loss: 0.0246
+Label distribution: [13, 8, 11, 0]
+Pred distribution: [12, 8, 12, 0]
+Accuracy: 0.71875
+Epoch [5/10], Step [448/1472], Loss: 0.0243
+Label distribution: [14, 7, 11, 0]
+Pred distribution: [18, 8, 6, 0]
+Accuracy: 0.78125
+Epoch [5/10], Step [480/1472], Loss: 0.0240
+Label distribution: [7, 13, 12, 0]
+Pred distribution: [5, 16, 11, 0]
+Accuracy: 0.75
+Epoch [5/10], Step [512/1472], Loss: 0.0445
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [5, 12, 15, 0]
+Accuracy: 0.65625
+Epoch [5/10], Step [544/1472], Loss: 0.0523
+Label distribution: [12, 11, 9, 0]
+Pred distribution: [13, 12, 7, 0]
+Accuracy: 0.71875
+Epoch [5/10], Step [576/1472], Loss: 0.0249
+Label distribution: [12, 15, 5, 0]
+Pred distribution: [11, 16, 5, 0]
+Accuracy: 0.90625
+Epoch [5/10], Step [608/1472], Loss: 0.0255
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [11, 15, 6, 0]
+Accuracy: 0.78125
+Epoch [5/10], Step [640/1472], Loss: 0.0499
+Label distribution: [6, 17, 9, 0]
+Pred distribution: [10, 17, 5, 0]
+Accuracy: 0.71875
+Epoch [5/10], Step [672/1472], Loss: 0.0261
+Label distribution: [10, 13, 9, 0]
+Pred distribution: [9, 13, 10, 0]
+Accuracy: 0.84375
+Epoch [5/10], Step [704/1472], Loss: 0.0237
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [12, 15, 5, 0]
+Accuracy: 0.78125
+Epoch [5/10], Step [736/1472], Loss: 0.0377
+Label distribution: [12, 14, 6, 0]
+Pred distribution: [13, 15, 4, 0]
+Accuracy: 0.84375
+Epoch [5/10], Step [768/1472], Loss: 0.0239
+Label distribution: [12, 14, 6, 0]
+Pred distribution: [12, 14, 6, 0]
+Accuracy: 0.875
+Epoch [5/10], Step [800/1472], Loss: 0.0464
+Label distribution: [6, 12, 14, 0]
+Pred distribution: [11, 11, 10, 0]
+Accuracy: 0.71875
+Epoch [5/10], Step [832/1472], Loss: 0.0235
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [4, 13, 15, 0]
+Accuracy: 0.78125
+Epoch [5/10], Step [864/1472], Loss: 0.0267
+Label distribution: [8, 14, 10, 0]
+Pred distribution: [9, 14, 9, 0]
+Accuracy: 0.90625
+Epoch [5/10], Step [896/1472], Loss: 0.0239
+Label distribution: [9, 17, 6, 0]
+Pred distribution: [8, 16, 8, 0]
+Accuracy: 0.90625
+Epoch [5/10], Step [928/1472], Loss: 0.0270
+Label distribution: [12, 12, 8, 0]
+Pred distribution: [13, 14, 5, 0]
+Accuracy: 0.84375
+Epoch [5/10], Step [960/1472], Loss: 0.0505
+Label distribution: [14, 9, 9, 0]
+Pred distribution: [13, 10, 9, 0]
+Accuracy: 0.78125
+Epoch [5/10], Step [992/1472], Loss: 0.0250
+Label distribution: [10, 15, 7, 0]
+Pred distribution: [6, 16, 10, 0]
+Accuracy: 0.875
+Epoch [5/10], Step [1024/1472], Loss: 0.0394
+Label distribution: [7, 12, 13, 0]
+Pred distribution: [4, 13, 15, 0]
+Accuracy: 0.8125
+Epoch [5/10], Step [1056/1472], Loss: 0.0239
+Label distribution: [10, 9, 13, 0]
+Pred distribution: [7, 10, 15, 0]
+Accuracy: 0.90625
+Epoch [5/10], Step [1088/1472], Loss: 0.0243
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [9, 11, 12, 0]
+Accuracy: 0.90625
+Epoch [5/10], Step [1120/1472], Loss: 0.0496
+Label distribution: [8, 14, 10, 0]
+Pred distribution: [8, 13, 11, 0]
+Accuracy: 0.75
+Epoch [5/10], Step [1152/1472], Loss: 0.0249
+Label distribution: [11, 11, 10, 0]
+Pred distribution: [15, 12, 5, 0]
+Accuracy: 0.84375
+Epoch [5/10], Step [1184/1472], Loss: 0.0291
+Label distribution: [13, 13, 6, 0]
+Pred distribution: [13, 13, 6, 0]
+Accuracy: 0.875
+Epoch [5/10], Step [1216/1472], Loss: 0.0237
+Label distribution: [11, 11, 10, 0]
+Pred distribution: [16, 14, 2, 0]
+Accuracy: 0.65625
+Epoch [5/10], Step [1248/1472], Loss: 0.0501
+Label distribution: [10, 11, 11, 0]
+Pred distribution: [12, 11, 9, 0]
+Accuracy: 0.75
+Epoch [5/10], Step [1280/1472], Loss: 0.0238
+Label distribution: [5, 13, 14, 0]
+Pred distribution: [8, 12, 12, 0]
+Accuracy: 0.84375
+Epoch [5/10], Step [1312/1472], Loss: 0.0253
+Label distribution: [14, 6, 12, 0]
+Pred distribution: [10, 7, 15, 0]
+Accuracy: 0.78125
+Epoch [5/10], Step [1344/1472], Loss: 0.0248
+Label distribution: [14, 11, 7, 0]
+Pred distribution: [14, 11, 7, 0]
+Accuracy: 0.875
+Epoch [5/10], Step [1376/1472], Loss: 0.0237
+Label distribution: [13, 13, 6, 0]
+Pred distribution: [15, 14, 3, 0]
+Accuracy: 0.875
+Epoch [5/10], Step [1408/1472], Loss: 0.0253
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [13, 13, 6, 0]
+Accuracy: 0.84375
+Epoch [5/10], Step [1440/1472], Loss: 0.0524
+Label distribution: [10, 7, 15, 0]
+Pred distribution: [8, 7, 17, 0]
+Accuracy: 0.75
+Epoch [5/10], Step [1472/1472], Loss: 0.0236
+Label distribution: [9, 14, 9, 0]
+Pred distribution: [9, 14, 9, 0]
+Accuracy: 0.875
+Accuracy per class: [0. 0. 1. 0.]
+Average accuracy: 0.25
+Time elapsed: 425.8250548839569 seconds
+Epoch [6/10], Step [32/1472], Loss: 0.0236
+Label distribution: [12, 8, 12, 0]
+Pred distribution: [12, 8, 12, 0]
+Accuracy: 0.9375
+Epoch [6/10], Step [64/1472], Loss: 0.0260
+Label distribution: [11, 7, 14, 0]
+Pred distribution: [7, 7, 18, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [96/1472], Loss: 0.0237
+Label distribution: [12, 12, 8, 0]
+Pred distribution: [14, 12, 6, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [128/1472], Loss: 0.0359
+Label distribution: [8, 13, 11, 0]
+Pred distribution: [10, 14, 8, 0]
+Accuracy: 0.78125
+Epoch [6/10], Step [160/1472], Loss: 0.0236
+Label distribution: [9, 15, 8, 0]
+Pred distribution: [10, 16, 6, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [192/1472], Loss: 0.0263
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [9, 13, 10, 0]
+Accuracy: 0.71875
+Epoch [6/10], Step [224/1472], Loss: 0.0254
+Label distribution: [8, 14, 10, 0]
+Pred distribution: [5, 16, 11, 0]
+Accuracy: 0.84375
+Epoch [6/10], Step [256/1472], Loss: 0.0242
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [8, 12, 12, 0]
+Accuracy: 0.84375
+Epoch [6/10], Step [288/1472], Loss: 0.0264
+Label distribution: [9, 16, 7, 0]
+Pred distribution: [9, 16, 7, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [320/1472], Loss: 0.0238
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [14, 9, 9, 0]
+Accuracy: 0.75
+Epoch [6/10], Step [352/1472], Loss: 0.0236
+Label distribution: [10, 11, 11, 0]
+Pred distribution: [10, 11, 11, 0]
+Accuracy: 0.8125
+Epoch [6/10], Step [384/1472], Loss: 0.0257
+Label distribution: [13, 10, 9, 0]
+Pred distribution: [16, 10, 6, 0]
+Accuracy: 0.90625
+Epoch [6/10], Step [416/1472], Loss: 0.0246
+Label distribution: [10, 9, 13, 0]
+Pred distribution: [11, 8, 13, 0]
+Accuracy: 0.90625
+Epoch [6/10], Step [448/1472], Loss: 0.0250
+Label distribution: [14, 7, 11, 0]
+Pred distribution: [9, 8, 15, 0]
+Accuracy: 0.84375
+Epoch [6/10], Step [480/1472], Loss: 0.0243
+Label distribution: [13, 6, 13, 0]
+Pred distribution: [10, 7, 15, 0]
+Accuracy: 0.78125
+Epoch [6/10], Step [512/1472], Loss: 0.0236
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [12, 9, 11, 0]
+Accuracy: 0.78125
+Epoch [6/10], Step [544/1472], Loss: 0.0249
+Label distribution: [11, 8, 13, 0]
+Pred distribution: [11, 6, 15, 0]
+Accuracy: 0.84375
+Epoch [6/10], Step [576/1472], Loss: 0.0236
+Label distribution: [9, 8, 15, 0]
+Pred distribution: [6, 8, 18, 0]
+Accuracy: 0.84375
+Epoch [6/10], Step [608/1472], Loss: 0.0269
+Label distribution: [10, 15, 7, 0]
+Pred distribution: [12, 15, 5, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [640/1472], Loss: 0.0259
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [10, 10, 12, 0]
+Accuracy: 0.78125
+Epoch [6/10], Step [672/1472], Loss: 0.0239
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [14, 11, 7, 0]
+Accuracy: 0.78125
+Epoch [6/10], Step [704/1472], Loss: 0.0254
+Label distribution: [15, 8, 9, 0]
+Pred distribution: [16, 9, 7, 0]
+Accuracy: 0.75
+Epoch [6/10], Step [736/1472], Loss: 0.0308
+Label distribution: [9, 11, 12, 0]
+Pred distribution: [10, 11, 11, 0]
+Accuracy: 0.96875
+Epoch [6/10], Step [768/1472], Loss: 0.0244
+Label distribution: [9, 16, 7, 0]
+Pred distribution: [6, 15, 11, 0]
+Accuracy: 0.78125
+Epoch [6/10], Step [800/1472], Loss: 0.0300
+Label distribution: [14, 7, 11, 0]
+Pred distribution: [11, 8, 13, 0]
+Accuracy: 0.8125
+Epoch [6/10], Step [832/1472], Loss: 0.0235
+Label distribution: [8, 12, 12, 0]
+Pred distribution: [8, 12, 12, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [864/1472], Loss: 0.0249
+Label distribution: [5, 9, 18, 0]
+Pred distribution: [5, 9, 18, 0]
+Accuracy: 0.8125
+Epoch [6/10], Step [896/1472], Loss: 0.0241
+Label distribution: [12, 8, 12, 0]
+Pred distribution: [15, 6, 11, 0]
+Accuracy: 0.78125
+Epoch [6/10], Step [928/1472], Loss: 0.0246
+Label distribution: [12, 10, 10, 0]
+Pred distribution: [12, 12, 8, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [960/1472], Loss: 0.0262
+Label distribution: [8, 15, 9, 0]
+Pred distribution: [10, 13, 9, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [992/1472], Loss: 0.0245
+Label distribution: [14, 12, 6, 0]
+Pred distribution: [13, 13, 6, 0]
+Accuracy: 0.90625
+Epoch [6/10], Step [1024/1472], Loss: 0.0251
+Label distribution: [13, 12, 7, 0]
+Pred distribution: [11, 14, 7, 0]
+Accuracy: 0.90625
+Epoch [6/10], Step [1056/1472], Loss: 0.0433
+Label distribution: [7, 11, 14, 0]
+Pred distribution: [9, 12, 11, 0]
+Accuracy: 0.78125
+Epoch [6/10], Step [1088/1472], Loss: 0.0238
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [12, 11, 9, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [1120/1472], Loss: 0.0263
+Label distribution: [10, 8, 14, 0]
+Pred distribution: [10, 8, 14, 0]
+Accuracy: 0.78125
+Epoch [6/10], Step [1152/1472], Loss: 0.0262
+Label distribution: [12, 10, 10, 0]
+Pred distribution: [12, 12, 8, 0]
+Accuracy: 0.8125
+Epoch [6/10], Step [1184/1472], Loss: 0.0532
+Label distribution: [11, 17, 4, 0]
+Pred distribution: [11, 17, 4, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [1216/1472], Loss: 0.0235
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [15, 10, 7, 0]
+Accuracy: 0.8125
+Epoch [6/10], Step [1248/1472], Loss: 0.0236
+Label distribution: [8, 13, 11, 0]
+Pred distribution: [4, 14, 14, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [1280/1472], Loss: 0.0237
+Label distribution: [6, 14, 12, 0]
+Pred distribution: [8, 14, 10, 0]
+Accuracy: 0.8125
+Epoch [6/10], Step [1312/1472], Loss: 0.0235
+Label distribution: [10, 8, 14, 0]
+Pred distribution: [10, 9, 13, 0]
+Accuracy: 0.8125
+Epoch [6/10], Step [1344/1472], Loss: 0.0243
+Label distribution: [10, 11, 11, 0]
+Pred distribution: [13, 12, 7, 0]
+Accuracy: 0.84375
+Epoch [6/10], Step [1376/1472], Loss: 0.0246
+Label distribution: [9, 13, 10, 0]
+Pred distribution: [8, 13, 11, 0]
+Accuracy: 0.90625
+Epoch [6/10], Step [1408/1472], Loss: 0.0241
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [9, 10, 13, 0]
+Accuracy: 0.875
+Epoch [6/10], Step [1440/1472], Loss: 0.0439
+Label distribution: [10, 9, 13, 0]
+Pred distribution: [12, 10, 10, 0]
+Accuracy: 0.8125
+Epoch [6/10], Step [1472/1472], Loss: 0.0237
+Label distribution: [11, 13, 8, 0]
+Pred distribution: [10, 14, 8, 0]
+Accuracy: 0.90625
+Accuracy per class: [0. 0. 1. 0.]
+Average accuracy: 0.25
+Time elapsed: 514.1508119106293 seconds
+Epoch [7/10], Step [32/1472], Loss: 0.0251
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [10, 9, 13, 0]
+Accuracy: 0.84375
+Epoch [7/10], Step [64/1472], Loss: 0.0241
+Label distribution: [15, 9, 8, 0]
+Pred distribution: [15, 7, 10, 0]
+Accuracy: 0.875
+Epoch [7/10], Step [96/1472], Loss: 0.0243
+Label distribution: [9, 11, 12, 0]
+Pred distribution: [13, 11, 8, 0]
+Accuracy: 0.6875
+Epoch [7/10], Step [128/1472], Loss: 0.0443
+Label distribution: [11, 8, 13, 0]
+Pred distribution: [10, 7, 15, 0]
+Accuracy: 0.59375
+Epoch [7/10], Step [160/1472], Loss: 0.0245
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [8, 9, 15, 0]
+Accuracy: 0.84375
+Epoch [7/10], Step [192/1472], Loss: 0.0235
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [8, 11, 13, 0]
+Accuracy: 0.90625
+Epoch [7/10], Step [224/1472], Loss: 0.0362
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [15, 10, 7, 0]
+Accuracy: 0.875
+Epoch [7/10], Step [256/1472], Loss: 0.0235
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [11, 11, 10, 0]
+Accuracy: 0.78125
+Epoch [7/10], Step [288/1472], Loss: 0.0235
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [12, 12, 8, 0]
+Accuracy: 0.90625
+Epoch [7/10], Step [320/1472], Loss: 0.0475
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [7, 9, 16, 0]
+Accuracy: 0.875
+Epoch [7/10], Step [352/1472], Loss: 0.0271
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [8, 13, 11, 0]
+Accuracy: 0.875
+Epoch [7/10], Step [384/1472], Loss: 0.0440
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [14, 10, 8, 0]
+Accuracy: 0.84375
+Epoch [7/10], Step [416/1472], Loss: 0.0257
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [10, 8, 14, 0]
+Accuracy: 0.8125
+Epoch [7/10], Step [448/1472], Loss: 0.0525
+Label distribution: [8, 12, 12, 0]
+Pred distribution: [9, 12, 11, 0]
+Accuracy: 0.90625
+Epoch [7/10], Step [480/1472], Loss: 0.0245
+Label distribution: [14, 8, 10, 0]
+Pred distribution: [15, 8, 9, 0]
+Accuracy: 0.71875
+Epoch [7/10], Step [512/1472], Loss: 0.0238
+Label distribution: [10, 7, 15, 0]
+Pred distribution: [9, 7, 16, 0]
+Accuracy: 0.8125
+Epoch [7/10], Step [544/1472], Loss: 0.0237
+Label distribution: [12, 14, 6, 0]
+Pred distribution: [13, 13, 6, 0]
+Accuracy: 0.78125
+Epoch [7/10], Step [576/1472], Loss: 0.0250
+Label distribution: [11, 7, 14, 0]
+Pred distribution: [13, 7, 12, 0]
+Accuracy: 0.9375
+Epoch [7/10], Step [608/1472], Loss: 0.0235
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [7, 11, 14, 0]
+Accuracy: 0.78125
+Epoch [7/10], Step [640/1472], Loss: 0.0239
+Label distribution: [14, 7, 11, 0]
+Pred distribution: [8, 8, 16, 0]
+Accuracy: 0.8125
+Epoch [7/10], Step [672/1472], Loss: 0.0387
+Label distribution: [10, 17, 5, 0]
+Pred distribution: [12, 16, 4, 0]
+Accuracy: 0.875
+Epoch [7/10], Step [704/1472], Loss: 0.0237
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [12, 10, 10, 0]
+Accuracy: 0.875
+Epoch [7/10], Step [736/1472], Loss: 0.0236
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [10, 14, 8, 0]
+Accuracy: 0.6875
+Epoch [7/10], Step [768/1472], Loss: 0.0240
+Label distribution: [10, 14, 8, 0]
+Pred distribution: [7, 16, 9, 0]
+Accuracy: 0.90625
+Epoch [7/10], Step [800/1472], Loss: 0.0245
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [10, 12, 10, 0]
+Accuracy: 0.90625
+Epoch [7/10], Step [832/1472], Loss: 0.0235
+Label distribution: [15, 11, 6, 0]
+Pred distribution: [11, 11, 10, 0]
+Accuracy: 0.8125
+Epoch [7/10], Step [864/1472], Loss: 0.0236
+Label distribution: [7, 14, 11, 0]
+Pred distribution: [5, 15, 12, 0]
+Accuracy: 0.9375
+Epoch [7/10], Step [896/1472], Loss: 0.0331
+Label distribution: [14, 10, 8, 0]
+Pred distribution: [13, 10, 9, 0]
+Accuracy: 0.84375
+Epoch [7/10], Step [928/1472], Loss: 0.0238
+Label distribution: [16, 4, 12, 0]
+Pred distribution: [15, 4, 13, 0]
+Accuracy: 0.90625
+Epoch [7/10], Step [960/1472], Loss: 0.0239
+Label distribution: [11, 8, 13, 0]
+Pred distribution: [17, 8, 7, 0]
+Accuracy: 0.8125
+Epoch [7/10], Step [992/1472], Loss: 0.0257
+Label distribution: [10, 9, 13, 0]
+Pred distribution: [5, 8, 19, 0]
+Accuracy: 0.6875
+Epoch [7/10], Step [1024/1472], Loss: 0.0261
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [8, 11, 13, 0]
+Accuracy: 0.84375
+Epoch [7/10], Step [1056/1472], Loss: 0.0248
+Label distribution: [13, 10, 9, 0]
+Pred distribution: [14, 11, 7, 0]
+Accuracy: 0.84375
+Epoch [7/10], Step [1088/1472], Loss: 0.0235
+Label distribution: [9, 11, 12, 0]
+Pred distribution: [9, 12, 11, 0]
+Accuracy: 0.8125
+Epoch [7/10], Step [1120/1472], Loss: 0.0244
+Label distribution: [19, 7, 6, 0]
+Pred distribution: [14, 8, 10, 0]
+Accuracy: 0.78125
+Epoch [7/10], Step [1152/1472], Loss: 0.0532
+Label distribution: [11, 11, 10, 0]
+Pred distribution: [13, 13, 6, 0]
+Accuracy: 0.8125
+Epoch [7/10], Step [1184/1472], Loss: 0.0239
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [12, 8, 12, 0]
+Accuracy: 0.875
+Epoch [7/10], Step [1216/1472], Loss: 0.0247
+Label distribution: [7, 16, 9, 0]
+Pred distribution: [10, 16, 6, 0]
+Accuracy: 0.90625
+Epoch [7/10], Step [1248/1472], Loss: 0.0467
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [9, 12, 11, 0]
+Accuracy: 0.75
+Epoch [7/10], Step [1280/1472], Loss: 0.0239
+Label distribution: [8, 17, 7, 0]
+Pred distribution: [7, 19, 6, 0]
+Accuracy: 0.8125
+Epoch [7/10], Step [1312/1472], Loss: 0.0241
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [10, 11, 11, 0]
+Accuracy: 0.8125
+Epoch [7/10], Step [1344/1472], Loss: 0.0235
+Label distribution: [9, 16, 7, 0]
+Pred distribution: [11, 16, 5, 0]
+Accuracy: 0.875
+Epoch [7/10], Step [1376/1472], Loss: 0.0244
+Label distribution: [13, 11, 8, 0]
+Pred distribution: [13, 11, 8, 0]
+Accuracy: 0.875
+Epoch [7/10], Step [1408/1472], Loss: 0.0235
+Label distribution: [9, 11, 12, 0]
+Pred distribution: [9, 11, 12, 0]
+Accuracy: 0.875
+Epoch [7/10], Step [1440/1472], Loss: 0.0253
+Label distribution: [12, 5, 15, 0]
+Pred distribution: [11, 5, 16, 0]
+Accuracy: 0.96875
+Epoch [7/10], Step [1472/1472], Loss: 0.0241
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [10, 11, 11, 0]
+Accuracy: 0.875
+Accuracy per class: [0. 0. 1. 0.]
+Average accuracy: 0.25
+Time elapsed: 603.0051553249359 seconds
+Epoch [8/10], Step [32/1472], Loss: 0.0237
+Label distribution: [12, 12, 8, 0]
+Pred distribution: [14, 12, 6, 0]
+Accuracy: 0.75
+Epoch [8/10], Step [64/1472], Loss: 0.0245
+Label distribution: [12, 12, 8, 0]
+Pred distribution: [11, 12, 9, 0]
+Accuracy: 0.90625
+Epoch [8/10], Step [96/1472], Loss: 0.0236
+Label distribution: [9, 13, 10, 0]
+Pred distribution: [12, 13, 7, 0]
+Accuracy: 0.90625
+Epoch [8/10], Step [128/1472], Loss: 0.0235
+Label distribution: [8, 10, 14, 0]
+Pred distribution: [8, 10, 14, 0]
+Accuracy: 0.875
+Epoch [8/10], Step [160/1472], Loss: 0.0254
+Label distribution: [10, 15, 7, 0]
+Pred distribution: [8, 15, 9, 0]
+Accuracy: 0.9375
+Epoch [8/10], Step [192/1472], Loss: 0.0235
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [9, 13, 10, 0]
+Accuracy: 0.8125
+Epoch [8/10], Step [224/1472], Loss: 0.0266
+Label distribution: [14, 9, 9, 0]
+Pred distribution: [12, 9, 11, 0]
+Accuracy: 0.9375
+Epoch [8/10], Step [256/1472], Loss: 0.0242
+Label distribution: [11, 13, 8, 0]
+Pred distribution: [12, 11, 9, 0]
+Accuracy: 0.84375
+Epoch [8/10], Step [288/1472], Loss: 0.0249
+Label distribution: [10, 11, 11, 0]
+Pred distribution: [15, 11, 6, 0]
+Accuracy: 0.84375
+Epoch [8/10], Step [320/1472], Loss: 0.0244
+Label distribution: [12, 10, 10, 0]
+Pred distribution: [13, 11, 8, 0]
+Accuracy: 0.9375
+Epoch [8/10], Step [352/1472], Loss: 0.0241
+Label distribution: [6, 13, 13, 0]
+Pred distribution: [7, 12, 13, 0]
+Accuracy: 0.84375
+Epoch [8/10], Step [384/1472], Loss: 0.0257
+Label distribution: [8, 14, 10, 0]
+Pred distribution: [5, 15, 12, 0]
+Accuracy: 0.90625
+Epoch [8/10], Step [416/1472], Loss: 0.0240
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [11, 11, 10, 0]
+Accuracy: 0.875
+Epoch [8/10], Step [448/1472], Loss: 0.0236
+Label distribution: [9, 11, 12, 0]
+Pred distribution: [8, 11, 13, 0]
+Accuracy: 0.84375
+Epoch [8/10], Step [480/1472], Loss: 0.0247
+Label distribution: [7, 9, 16, 0]
+Pred distribution: [8, 10, 14, 0]
+Accuracy: 0.875
+Epoch [8/10], Step [512/1472], Loss: 0.0518
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [10, 10, 12, 0]
+Accuracy: 0.84375
+Epoch [8/10], Step [544/1472], Loss: 0.0445
+Label distribution: [12, 8, 12, 0]
+Pred distribution: [9, 10, 13, 0]
+Accuracy: 0.78125
+Epoch [8/10], Step [576/1472], Loss: 0.0247
+Label distribution: [13, 8, 11, 0]
+Pred distribution: [11, 10, 11, 0]
+Accuracy: 0.875
+Epoch [8/10], Step [608/1472], Loss: 0.0243
+Label distribution: [12, 7, 13, 0]
+Pred distribution: [13, 8, 11, 0]
+Accuracy: 0.90625
+Epoch [8/10], Step [640/1472], Loss: 0.0323
+Label distribution: [12, 8, 12, 0]
+Pred distribution: [9, 8, 15, 0]
+Accuracy: 0.84375
+Epoch [8/10], Step [672/1472], Loss: 0.0354
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [13, 10, 9, 0]
+Accuracy: 0.84375
+Epoch [8/10], Step [704/1472], Loss: 0.0238
+Label distribution: [9, 13, 10, 0]
+Pred distribution: [10, 12, 10, 0]
+Accuracy: 0.84375
+Epoch [8/10], Step [736/1472], Loss: 0.0235
+Label distribution: [14, 8, 10, 0]
+Pred distribution: [12, 9, 11, 0]
+Accuracy: 0.9375
+Epoch [8/10], Step [768/1472], Loss: 0.0261
+Label distribution: [11, 8, 13, 0]
+Pred distribution: [15, 10, 7, 0]
+Accuracy: 0.71875
+Epoch [8/10], Step [800/1472], Loss: 0.0235
+Label distribution: [14, 14, 4, 0]
+Pred distribution: [12, 14, 6, 0]
+Accuracy: 0.9375
+Epoch [8/10], Step [832/1472], Loss: 0.0242
+Label distribution: [5, 13, 14, 0]
+Pred distribution: [5, 14, 13, 0]
+Accuracy: 0.90625
+Epoch [8/10], Step [864/1472], Loss: 0.0282
+Label distribution: [8, 10, 14, 0]
+Pred distribution: [7, 10, 15, 0]
+Accuracy: 0.96875
+Epoch [8/10], Step [896/1472], Loss: 0.0298
+Label distribution: [6, 15, 11, 0]
+Pred distribution: [6, 15, 11, 0]
+Accuracy: 0.875
+Epoch [8/10], Step [928/1472], Loss: 0.0241
+Label distribution: [8, 7, 17, 0]
+Pred distribution: [11, 8, 13, 0]
+Accuracy: 0.84375
+Epoch [8/10], Step [960/1472], Loss: 0.0235
+Label distribution: [13, 11, 8, 0]
+Pred distribution: [10, 11, 11, 0]
+Accuracy: 0.84375
+Epoch [8/10], Step [992/1472], Loss: 0.0247
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [7, 13, 12, 0]
+Accuracy: 0.875
+Epoch [8/10], Step [1024/1472], Loss: 0.0247
+Label distribution: [6, 13, 13, 0]
+Pred distribution: [6, 13, 13, 0]
+Accuracy: 1.0
+Epoch [8/10], Step [1056/1472], Loss: 0.0250
+Label distribution: [8, 14, 10, 0]
+Pred distribution: [10, 14, 8, 0]
+Accuracy: 0.9375
+Epoch [8/10], Step [1088/1472], Loss: 0.0249
+Label distribution: [10, 5, 17, 0]
+Pred distribution: [11, 6, 15, 0]
+Accuracy: 0.875
+Epoch [8/10], Step [1120/1472], Loss: 0.0241
+Label distribution: [10, 11, 11, 0]
+Pred distribution: [10, 11, 11, 0]
+Accuracy: 0.9375
+Epoch [8/10], Step [1152/1472], Loss: 0.0242
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [14, 8, 10, 0]
+Accuracy: 0.71875
+Epoch [8/10], Step [1184/1472], Loss: 0.0235
+Label distribution: [10, 13, 9, 0]
+Pred distribution: [6, 18, 8, 0]
+Accuracy: 0.78125
+Epoch [8/10], Step [1216/1472], Loss: 0.0234
+Label distribution: [12, 10, 10, 0]
+Pred distribution: [11, 10, 11, 0]
+Accuracy: 0.96875
+Epoch [8/10], Step [1248/1472], Loss: 0.0243
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [9, 12, 11, 0]
+Accuracy: 0.9375
+Epoch [8/10], Step [1280/1472], Loss: 0.0234
+Label distribution: [6, 19, 7, 0]
+Pred distribution: [8, 19, 5, 0]
+Accuracy: 0.875
+Epoch [8/10], Step [1312/1472], Loss: 0.0240
+Label distribution: [13, 9, 10, 0]
+Pred distribution: [12, 9, 11, 0]
+Accuracy: 0.84375
+Epoch [8/10], Step [1344/1472], Loss: 0.0240
+Label distribution: [11, 6, 15, 0]
+Pred distribution: [13, 7, 12, 0]
+Accuracy: 0.90625
+Epoch [8/10], Step [1376/1472], Loss: 0.0541
+Label distribution: [13, 10, 9, 0]
+Pred distribution: [7, 15, 10, 0]
+Accuracy: 0.8125
+Epoch [8/10], Step [1408/1472], Loss: 0.0238
+Label distribution: [11, 8, 13, 0]
+Pred distribution: [8, 9, 15, 0]
+Accuracy: 0.90625
+Epoch [8/10], Step [1440/1472], Loss: 0.0243
+Label distribution: [11, 14, 7, 0]
+Pred distribution: [9, 14, 9, 0]
+Accuracy: 0.9375
+Epoch [8/10], Step [1472/1472], Loss: 0.0238
+Label distribution: [10, 14, 8, 0]
+Pred distribution: [10, 14, 8, 0]
+Accuracy: 0.9375
+Accuracy per class: [0. 0. 1. 0.]
+Average accuracy: 0.25
+Time elapsed: 690.6826479434967 seconds
+Epoch [9/10], Step [32/1472], Loss: 0.0500
+Label distribution: [10, 15, 7, 0]
+Pred distribution: [12, 15, 5, 0]
+Accuracy: 0.75
+Epoch [9/10], Step [64/1472], Loss: 0.0234
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [11, 13, 8, 0]
+Accuracy: 0.8125
+Epoch [9/10], Step [96/1472], Loss: 0.0297
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [12, 10, 10, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [128/1472], Loss: 0.0239
+Label distribution: [13, 8, 11, 0]
+Pred distribution: [11, 9, 12, 0]
+Accuracy: 0.9375
+Epoch [9/10], Step [160/1472], Loss: 0.0234
+Label distribution: [13, 9, 10, 0]
+Pred distribution: [13, 8, 11, 0]
+Accuracy: 0.9375
+Epoch [9/10], Step [192/1472], Loss: 0.0269
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [14, 9, 9, 0]
+Accuracy: 0.875
+Epoch [9/10], Step [224/1472], Loss: 0.0245
+Label distribution: [12, 10, 10, 0]
+Pred distribution: [6, 11, 15, 0]
+Accuracy: 0.71875
+Epoch [9/10], Step [256/1472], Loss: 0.0239
+Label distribution: [16, 12, 4, 0]
+Pred distribution: [17, 12, 3, 0]
+Accuracy: 0.96875
+Epoch [9/10], Step [288/1472], Loss: 0.0237
+Label distribution: [9, 8, 15, 0]
+Pred distribution: [8, 9, 15, 0]
+Accuracy: 0.875
+Epoch [9/10], Step [320/1472], Loss: 0.0235
+Label distribution: [14, 8, 10, 0]
+Pred distribution: [13, 8, 11, 0]
+Accuracy: 0.84375
+Epoch [9/10], Step [352/1472], Loss: 0.0236
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [10, 14, 8, 0]
+Accuracy: 0.875
+Epoch [9/10], Step [384/1472], Loss: 0.0542
+Label distribution: [13, 9, 10, 0]
+Pred distribution: [9, 12, 11, 0]
+Accuracy: 0.75
+Epoch [9/10], Step [416/1472], Loss: 0.0235
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [12, 9, 11, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [448/1472], Loss: 0.0240
+Label distribution: [6, 12, 14, 0]
+Pred distribution: [6, 13, 13, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [480/1472], Loss: 0.0250
+Label distribution: [9, 13, 10, 0]
+Pred distribution: [9, 12, 11, 0]
+Accuracy: 0.9375
+Epoch [9/10], Step [512/1472], Loss: 0.0234
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [9, 11, 12, 0]
+Accuracy: 0.9375
+Epoch [9/10], Step [544/1472], Loss: 0.0234
+Label distribution: [8, 15, 9, 0]
+Pred distribution: [13, 14, 5, 0]
+Accuracy: 0.78125
+Epoch [9/10], Step [576/1472], Loss: 0.0234
+Label distribution: [6, 10, 16, 0]
+Pred distribution: [4, 11, 17, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [608/1472], Loss: 0.0234
+Label distribution: [12, 7, 13, 0]
+Pred distribution: [12, 7, 13, 0]
+Accuracy: 0.875
+Epoch [9/10], Step [640/1472], Loss: 0.0234
+Label distribution: [17, 9, 6, 0]
+Pred distribution: [17, 10, 5, 0]
+Accuracy: 0.875
+Epoch [9/10], Step [672/1472], Loss: 0.0271
+Label distribution: [12, 8, 12, 0]
+Pred distribution: [12, 8, 12, 0]
+Accuracy: 1.0
+Epoch [9/10], Step [704/1472], Loss: 0.0238
+Label distribution: [10, 8, 14, 0]
+Pred distribution: [12, 8, 12, 0]
+Accuracy: 0.8125
+Epoch [9/10], Step [736/1472], Loss: 0.0240
+Label distribution: [7, 18, 7, 0]
+Pred distribution: [6, 19, 7, 0]
+Accuracy: 0.9375
+Epoch [9/10], Step [768/1472], Loss: 0.0234
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [12, 10, 10, 0]
+Accuracy: 0.875
+Epoch [9/10], Step [800/1472], Loss: 0.0242
+Label distribution: [10, 13, 9, 0]
+Pred distribution: [9, 13, 10, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [832/1472], Loss: 0.0238
+Label distribution: [14, 7, 11, 0]
+Pred distribution: [14, 8, 10, 0]
+Accuracy: 0.96875
+Epoch [9/10], Step [864/1472], Loss: 0.0405
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [12, 11, 9, 0]
+Accuracy: 0.84375
+Epoch [9/10], Step [896/1472], Loss: 0.0241
+Label distribution: [11, 12, 9, 0]
+Pred distribution: [12, 12, 8, 0]
+Accuracy: 0.96875
+Epoch [9/10], Step [928/1472], Loss: 0.0234
+Label distribution: [9, 13, 10, 0]
+Pred distribution: [8, 14, 10, 0]
+Accuracy: 0.9375
+Epoch [9/10], Step [960/1472], Loss: 0.0245
+Label distribution: [16, 7, 9, 0]
+Pred distribution: [17, 9, 6, 0]
+Accuracy: 0.875
+Epoch [9/10], Step [992/1472], Loss: 0.0339
+Label distribution: [11, 9, 12, 0]
+Pred distribution: [9, 9, 14, 0]
+Accuracy: 0.9375
+Epoch [9/10], Step [1024/1472], Loss: 0.0247
+Label distribution: [6, 15, 11, 0]
+Pred distribution: [9, 15, 8, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [1056/1472], Loss: 0.0234
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [8, 11, 13, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [1088/1472], Loss: 0.0240
+Label distribution: [10, 9, 13, 0]
+Pred distribution: [9, 10, 13, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [1120/1472], Loss: 0.0234
+Label distribution: [8, 14, 10, 0]
+Pred distribution: [10, 13, 9, 0]
+Accuracy: 0.9375
+Epoch [9/10], Step [1152/1472], Loss: 0.0242
+Label distribution: [11, 10, 11, 0]
+Pred distribution: [13, 10, 9, 0]
+Accuracy: 0.9375
+Epoch [9/10], Step [1184/1472], Loss: 0.0240
+Label distribution: [7, 13, 12, 0]
+Pred distribution: [4, 13, 15, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [1216/1472], Loss: 0.0278
+Label distribution: [8, 13, 11, 0]
+Pred distribution: [10, 13, 9, 0]
+Accuracy: 0.9375
+Epoch [9/10], Step [1248/1472], Loss: 0.0237
+Label distribution: [15, 10, 7, 0]
+Pred distribution: [16, 10, 6, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [1280/1472], Loss: 0.0471
+Label distribution: [11, 8, 13, 0]
+Pred distribution: [12, 8, 12, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [1312/1472], Loss: 0.0240
+Label distribution: [11, 11, 10, 0]
+Pred distribution: [11, 11, 10, 0]
+Accuracy: 0.9375
+Epoch [9/10], Step [1344/1472], Loss: 0.0241
+Label distribution: [12, 5, 15, 0]
+Pred distribution: [17, 6, 9, 0]
+Accuracy: 0.75
+Epoch [9/10], Step [1376/1472], Loss: 0.0238
+Label distribution: [10, 9, 13, 0]
+Pred distribution: [6, 13, 13, 0]
+Accuracy: 0.78125
+Epoch [9/10], Step [1408/1472], Loss: 0.0234
+Label distribution: [13, 10, 9, 0]
+Pred distribution: [13, 10, 9, 0]
+Accuracy: 0.8125
+Epoch [9/10], Step [1440/1472], Loss: 0.0344
+Label distribution: [14, 10, 8, 0]
+Pred distribution: [15, 9, 8, 0]
+Accuracy: 0.90625
+Epoch [9/10], Step [1472/1472], Loss: 0.0242
+Label distribution: [11, 6, 15, 0]
+Pred distribution: [12, 6, 14, 0]
+Accuracy: 0.96875
+Accuracy per class: [0. 0. 1. 0.]
+Average accuracy: 0.25
+Time elapsed: 781.2035324573517 seconds
+Epoch [10/10], Step [32/1472], Loss: 0.0234
+Label distribution: [14, 7, 11, 0]
+Pred distribution: [13, 9, 10, 0]
+Accuracy: 0.875
+Epoch [10/10], Step [64/1472], Loss: 0.0255
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [16, 9, 7, 0]
+Accuracy: 0.875
+Epoch [10/10], Step [96/1472], Loss: 0.0252
+Label distribution: [7, 9, 16, 0]
+Pred distribution: [7, 9, 16, 0]
+Accuracy: 1.0
+Epoch [10/10], Step [128/1472], Loss: 0.0253
+Label distribution: [8, 9, 15, 0]
+Pred distribution: [7, 10, 15, 0]
+Accuracy: 0.9375
+Epoch [10/10], Step [160/1472], Loss: 0.0245
+Label distribution: [10, 9, 13, 0]
+Pred distribution: [11, 10, 11, 0]
+Accuracy: 0.875
+Epoch [10/10], Step [192/1472], Loss: 0.0267
+Label distribution: [9, 11, 12, 0]
+Pred distribution: [12, 9, 11, 0]
+Accuracy: 0.84375
+Epoch [10/10], Step [224/1472], Loss: 0.0236
+Label distribution: [11, 11, 10, 0]
+Pred distribution: [11, 11, 10, 0]
+Accuracy: 1.0
+Epoch [10/10], Step [256/1472], Loss: 0.0239
+Label distribution: [13, 7, 12, 0]
+Pred distribution: [11, 8, 13, 0]
+Accuracy: 0.9375
+Epoch [10/10], Step [288/1472], Loss: 0.0259
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [9, 13, 10, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [320/1472], Loss: 0.0238
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [11, 9, 12, 0]
+Accuracy: 0.9375
+Epoch [10/10], Step [352/1472], Loss: 0.0238
+Label distribution: [12, 8, 12, 0]
+Pred distribution: [12, 8, 12, 0]
+Accuracy: 1.0
+Epoch [10/10], Step [384/1472], Loss: 0.0534
+Label distribution: [10, 8, 14, 0]
+Pred distribution: [12, 8, 12, 0]
+Accuracy: 0.9375
+Epoch [10/10], Step [416/1472], Loss: 0.0386
+Label distribution: [12, 12, 8, 0]
+Pred distribution: [12, 12, 8, 0]
+Accuracy: 0.8125
+Epoch [10/10], Step [448/1472], Loss: 0.0236
+Label distribution: [13, 10, 9, 0]
+Pred distribution: [13, 12, 7, 0]
+Accuracy: 0.84375
+Epoch [10/10], Step [480/1472], Loss: 0.0285
+Label distribution: [8, 12, 12, 0]
+Pred distribution: [7, 13, 12, 0]
+Accuracy: 0.9375
+Epoch [10/10], Step [512/1472], Loss: 0.0505
+Label distribution: [10, 13, 9, 0]
+Pred distribution: [12, 15, 5, 0]
+Accuracy: 0.78125
+Epoch [10/10], Step [544/1472], Loss: 0.0236
+Label distribution: [10, 12, 10, 0]
+Pred distribution: [8, 14, 10, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [576/1472], Loss: 0.0236
+Label distribution: [15, 6, 11, 0]
+Pred distribution: [17, 8, 7, 0]
+Accuracy: 0.84375
+Epoch [10/10], Step [608/1472], Loss: 0.0234
+Label distribution: [9, 12, 11, 0]
+Pred distribution: [10, 11, 11, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [640/1472], Loss: 0.0252
+Label distribution: [9, 9, 14, 0]
+Pred distribution: [7, 11, 14, 0]
+Accuracy: 0.8125
+Epoch [10/10], Step [672/1472], Loss: 0.0240
+Label distribution: [14, 6, 12, 0]
+Pred distribution: [11, 8, 13, 0]
+Accuracy: 0.84375
+Epoch [10/10], Step [704/1472], Loss: 0.0537
+Label distribution: [10, 14, 8, 0]
+Pred distribution: [11, 14, 7, 0]
+Accuracy: 0.84375
+Epoch [10/10], Step [736/1472], Loss: 0.0238
+Label distribution: [13, 10, 9, 0]
+Pred distribution: [10, 11, 11, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [768/1472], Loss: 0.0236
+Label distribution: [12, 7, 13, 0]
+Pred distribution: [13, 9, 10, 0]
+Accuracy: 0.84375
+Epoch [10/10], Step [800/1472], Loss: 0.0234
+Label distribution: [8, 17, 7, 0]
+Pred distribution: [9, 17, 6, 0]
+Accuracy: 0.96875
+Epoch [10/10], Step [832/1472], Loss: 0.0238
+Label distribution: [14, 10, 8, 0]
+Pred distribution: [14, 10, 8, 0]
+Accuracy: 0.875
+Epoch [10/10], Step [864/1472], Loss: 0.0234
+Label distribution: [9, 15, 8, 0]
+Pred distribution: [10, 15, 7, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [896/1472], Loss: 0.0538
+Label distribution: [5, 14, 13, 0]
+Pred distribution: [7, 13, 12, 0]
+Accuracy: 0.78125
+Epoch [10/10], Step [928/1472], Loss: 0.0238
+Label distribution: [13, 9, 10, 0]
+Pred distribution: [11, 12, 9, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [960/1472], Loss: 0.0246
+Label distribution: [11, 7, 14, 0]
+Pred distribution: [13, 6, 13, 0]
+Accuracy: 0.875
+Epoch [10/10], Step [992/1472], Loss: 0.0239
+Label distribution: [17, 9, 6, 0]
+Pred distribution: [17, 9, 6, 0]
+Accuracy: 0.9375
+Epoch [10/10], Step [1024/1472], Loss: 0.0233
+Label distribution: [8, 12, 12, 0]
+Pred distribution: [10, 13, 9, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [1056/1472], Loss: 0.0236
+Label distribution: [10, 11, 11, 0]
+Pred distribution: [9, 12, 11, 0]
+Accuracy: 0.96875
+Epoch [10/10], Step [1088/1472], Loss: 0.0270
+Label distribution: [9, 14, 9, 0]
+Pred distribution: [9, 15, 8, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [1120/1472], Loss: 0.0238
+Label distribution: [12, 9, 11, 0]
+Pred distribution: [12, 11, 9, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [1152/1472], Loss: 0.0270
+Label distribution: [9, 11, 12, 0]
+Pred distribution: [10, 12, 10, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [1184/1472], Loss: 0.0252
+Label distribution: [9, 14, 9, 0]
+Pred distribution: [11, 14, 7, 0]
+Accuracy: 0.875
+Epoch [10/10], Step [1216/1472], Loss: 0.0236
+Label distribution: [12, 13, 7, 0]
+Pred distribution: [11, 12, 9, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [1248/1472], Loss: 0.0236
+Label distribution: [10, 13, 9, 0]
+Pred distribution: [12, 13, 7, 0]
+Accuracy: 0.875
+Epoch [10/10], Step [1280/1472], Loss: 0.0267
+Label distribution: [12, 8, 12, 0]
+Pred distribution: [12, 9, 11, 0]
+Accuracy: 0.875
+Epoch [10/10], Step [1312/1472], Loss: 0.0262
+Label distribution: [10, 9, 13, 0]
+Pred distribution: [11, 9, 12, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [1344/1472], Loss: 0.0236
+Label distribution: [7, 14, 11, 0]
+Pred distribution: [6, 13, 13, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [1376/1472], Loss: 0.0392
+Label distribution: [13, 11, 8, 0]
+Pred distribution: [14, 10, 8, 0]
+Accuracy: 0.90625
+Epoch [10/10], Step [1408/1472], Loss: 0.0236
+Label distribution: [10, 10, 12, 0]
+Pred distribution: [10, 11, 11, 0]
+Accuracy: 0.9375
+Epoch [10/10], Step [1440/1472], Loss: 0.0238
+Label distribution: [8, 10, 14, 0]
+Pred distribution: [8, 13, 11, 0]
+Accuracy: 0.84375
+Epoch [10/10], Step [1472/1472], Loss: 0.0239
+Label distribution: [17, 11, 4, 0]
+Pred distribution: [18, 10, 4, 0]
+Accuracy: 0.90625
+Accuracy per class: [0.33333333 0.         0.93333333 0.        ]
+Average accuracy: 0.31666666666666665
+Time elapsed: 869.7028543949127 seconds
+
