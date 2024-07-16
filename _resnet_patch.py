@@ -17,7 +17,7 @@ from sklearn.model_selection import KFold
 
 from RetCCL.custom_objects import retccl_resnet50, HistoRetCCLResnet50_Weights
 
-from load_data import PatchDataset, get_balanced_dataloader, DATA_DIR, P53_CLASS_NAMES
+from load_data import PatchDataset, get_balanced_dataloader, DATA_DIR, P53_CLASS_NAMES, PatchImgDataset, TRANSFORMS
 from clam_model.use_clam import process_image
 
 # Device configuration
@@ -31,7 +31,7 @@ class ResNetModel(pl.LightningModule):
                     **kwargs):
         super(ResNetModel, self).__init__()
         self.model = retccl_resnet50(weights=HistoRetCCLResnet50_Weights.RetCCLWeights)
-        num_ftrs = 2048
+        num_ftrs = self.model.fc.in_features
         self.model.fc = nn.Sequential(
             nn.Linear(num_ftrs, 512),
             nn.ReLU(),
@@ -40,11 +40,11 @@ class ResNetModel(pl.LightningModule):
             nn.Linear(256, num_classes)
         )
 
-        # Freeze all layers except model.fc
-        for param in self.model.parameters():
-            param.requires_grad = False
-        for param in self.model.fc.parameters():
-            param.requires_grad = True
+        # # Freeze all layers except model.fc
+        # for param in self.model.parameters():
+        #     param.requires_grad = False
+        # for param in self.model.fc.parameters():
+        #     param.requires_grad = True
 
         self.criterion = nn.CrossEntropyLoss()
         self.num_classes = num_classes
@@ -67,7 +67,12 @@ class ResNetModel(pl.LightningModule):
             return self.model.fc(x)
     
     def step(self, batch, batch_idx, mode):
-        pass
+        images, labels = batch
+        outputs = self(images)
+        loss = self.criterion(outputs, labels)
+        preds = torch.argmax(outputs, dim=1)
+        self.outputs[mode].append({'loss': loss, 'preds': preds, 'labels': labels})
+        return loss
 
     def configure_optimizers(self):
         optimizer = optim.Adam(self.parameters(), lr=self.lr, weight_decay=self.weight_decay)
@@ -148,7 +153,7 @@ class ResNetModelDoubleBinary(ResNetModel):
                  **kwargs):
         kwargs['num_classes'] = 4
         super(ResNetModelDoubleBinary, self).__init__(**kwargs)
-        num_ftrs = 2048
+        num_ftrs = self.model.fc.in_features
         self.model.fc = nn.Sequential(
             nn.Linear(num_ftrs, 512),
             nn.ReLU(),
@@ -222,9 +227,10 @@ if __name__ == "__main__":
     parser.add_argument("--lr_gamma", type=float, default=0.1, help="Gamma for the learning rate scheduler.")
 
     # Specific arguments
-    parser.add_argument("--model", type=str, default="end-to-end_double-binary", help="Model to use.")
+    parser.add_argument("--model", type=str, default="end-to-end", help="Model to use.")
     parser.add_argument("--class_distr_factors", nargs="+", type=int, default=[1,1,1,0], help="Class distribution factors.")
     parser.add_argument("--see_opposite_class_data", type=str, default="normal", help="How to handle the opposite class data in the double binary model.")
+    parser.add_argument("--encoder_model", type=str, default="retccl", help="Encoder model to use.")
 
     # Other arguments
     parser.add_argument("--num_runs", type=int, default=1, help="Number of runs to perform per fold.")
@@ -261,14 +267,23 @@ if __name__ == "__main__":
         print("Since the opposite class data is being handled differently, (n wildtype) should be balanced with (n mutated + doubleclone).")
         print("This may lead the model to learn to predict the majority class.")
 
+    if args.encoder_model == "retccl":
+        normalization = TRANSFORMS["imgnet_normalize"]
+    else:
+        normalization = TRANSFORMS["normalize"]
+
+    transform = torchvision.transforms.Compose([
+        TRANSFORMS["basic"],
+        normalization,
+    ])
 
     # Load the datasets
-    Dataset = PatchDataset
+    Dataset = PatchImgDataset
     test_dataset = Dataset(root_dir=DATA_DIR, class_names=P53_CLASS_NAMES,
-        labels_filename="test")
+        labels_filename="test", encoder=args.encoder_model, transform=normalization)
     print("Test dataset size: ", len(test_dataset))
     train_dataset = Dataset(root_dir=DATA_DIR, class_names=P53_CLASS_NAMES,
-        labels_filename="train")
+        labels_filename="train", encoder=args.encoder_model, transform=transform)
     print("Train dataset size: ", len(train_dataset))
 
 
@@ -285,7 +300,7 @@ if __name__ == "__main__":
     args.id_nr = id_nr
     
     model_str = args.model
-    if args.model == "patch_end-to-end_db":
+    if args.model == "end-to-end_double-binary":
         model_str += f"_{args.see_opposite_class_data}"
     name = f"e{args.epochs}_{model_str}"
     args.group_name = name

@@ -404,12 +404,13 @@ if __name__ == "__main__":
     # Specific arguments
     parser.add_argument("--model", type=str, default="CLAM_MB", help="Model to use.")
     # parser.add_argument("--model", type=str, default="CLAM_db", help="Model to use.")
-    parser.add_argument("--encoding_size", type=int, default=512)
+    parser.add_argument("--encoding_size", type=int, default=2048)
     parser.add_argument("--class_distr_factors", nargs="+", type=int, default=[1,1,1,0], help="Class distribution factors.")
     parser.add_argument("--see_opposite_class_data", type=str, default="no_loss", help="How to handle the opposite class data in the double binary model.")
     # parser.add_argument("--see_opposite_class_data", type=str, default="normal", help="How to handle the opposite class data in the double binary model.")
     # parser.add_argument("--latents_path", type=str, default="bag_latents_gs256_retccl__backup.pt", help="Path to the latents file.")
-    parser.add_argument("--latents_path", type=str, default="bag_latents_gs64_resnet18_tuned.pt", help="Path to the latents file.")
+    # parser.add_argument("--latents_path", type=str, default="bag_latents_gs128_resnet18_tuned.pt", help="Path to the latents file.")
+    parser.add_argument("--latents_path", type=str, default="bag_latents_gs256_retccl_tuned_hybrid.pt", help="Path to the latents file.")
     parser.add_argument("--subtyping", type=bool, default=False, help="Whether to use subtyping in the CLAM model.")
     parser.add_argument("--mix_bags", type=int, default=0, help="How many mixed bags in the CLAM model.")
     # parser.add_argument("--mix_bags", type=int, default=1e6, help="How many mixed bags in the CLAM model.")
@@ -487,6 +488,10 @@ if __name__ == "__main__":
         model_str += f"_m"
     if args.encoding_size != 2048:
         model_str += f"_enc{args.encoding_size}"
+        gs = args.latents_path.split("_")[2]
+        model_str += f"_{gs}"
+    if "tuned" in args.latents_path:
+        model_str += "_tuned"
     name = f"e{args.epochs}_{model_str}"
     args.group_name = name
 

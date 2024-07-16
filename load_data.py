@@ -740,7 +740,7 @@ class PatchDataset(torch.utils.data.Dataset):
         where patch latent is a vector of shape (2048),
         patch label is a vector of shape (2) with the overexpression and nullmutation labels.
     """
-    def __init__(self, root_dir, labels_filename="train", data_limit=None, int_labels=True, **kwargs):
+    def __init__(self, root_dir, labels_filename="train", data_limit=None, int_labels=True, encoder="retccl", **kwargs):
         """
         Args:
             root_dir (string): Directory with all the biopsies.
@@ -757,7 +757,10 @@ class PatchDataset(torch.utils.data.Dataset):
         
         # bag_latents_file = os.path.join(root_dir, f"bag_latents_gs256_retccl_relaxed.pt")
         # bag_patch_indices_file = os.path.join(root_dir, f"non_empty_patch_indices_gs256_relaxed.pt")
-        bag_latents_file = os.path.join(root_dir, f"bag_latents_gs256_retccl__backup.pt")
+        if encoder == "retccl":
+            bag_latents_file = os.path.join(root_dir, f"bag_latents_gs256_retccl__backup.pt")
+        elif encoder == "resnet18t":
+            bag_latents_file = os.path.join(root_dir, f"bag_latents_gs64_resnet18_tuned.pt")
         bag_patch_indices_file = os.path.join(root_dir, f"non_empty_patch_indices_gs256.pt")
         oe_patch_indices_file = os.path.join(root_dir, f"oe_patch_indices_gs256.pt")
         nm_patch_indices_file = os.path.join(root_dir, f"nm_patch_indices_gs256.pt")
@@ -774,6 +777,12 @@ class PatchDataset(torch.utils.data.Dataset):
         self.patch_latents = []
         self.patch_labels = []
         for idx, label in tqdm(self.labels):
+            assert idx in bag_latents, f"Bag {idx} not in bag_latents"
+            assert idx in bag_patch_indices, f"Bag {idx} not in bag_patch_indices"
+            # assert idx in oe_patch_indices, f"Bag {idx} not in oe_patch_indices"
+            # assert idx in nm_patch_indices, f"Bag {idx} not in nm_patch_indices"
+            assert len(bag_latents[idx]) == len(bag_patch_indices[idx]), f"Bag {idx} latents and indices don't match: {len(bag_latents[idx])} != {len(bag_patch_indices[idx])}"
+
             if label == 0: # Wildtype, use all patches
                 self.patch_latents.extend(bag_latents[idx])
                 self.patch_labels.extend([(0, 0)] * len(bag_latents[idx]))
@@ -852,6 +861,134 @@ class PatchDataset(torch.utils.data.Dataset):
             ax.imshow(patch.squeeze().permute(1, 2, 0))
             ax.set_title(f"Wildtype")
             if label == "nullmutation":
+                ax.imshow(patch_label[0], alpha=0.5, vmin=0, vmax=1, cmap="Reds")
+                ax.set_title(f"Nullmutation [{patch_label.mean():.2f}]")
+            ax.axis("off")
+        plt.show()
+
+
+class PatchImgDataset(torch.utils.data.Dataset):
+    """
+    Biopsy patch dataset with overexpression and nullmutation labels.
+
+    getitem returns (patch img, patch label) tuples, 
+        where patch img is a tensor of shape (3, 256, 256),
+        patch label is a vector of shape (2) with the overexpression and nullmutation labels.
+    """
+    def __init__(self, root_dir, labels_filename="train", data_limit=None, int_labels=True, transform=None, **kwargs):
+        """
+        Args:
+            root_dir (string): Directory with all the biopsies.
+        """
+        self.root_dir = root_dir
+        self.int_labels = int_labels
+        self.transform = transform
+
+        # Read the labels
+        labels_file = os.path.join(root_dir, f"{labels_filename}.csv")
+        self.labels = np.loadtxt(labels_file, delimiter=",", skiprows=1)
+        self.labels = self.labels.astype(int)
+        if data_limit:
+            self.labels = self.labels[:data_limit]
+
+        img_dir = os.path.join(root_dir, "patches")
+
+        oe_patch_indices_file = os.path.join(root_dir, f"oe_patch_indices_gs256.pt")
+        nm_patch_indices_file = os.path.join(root_dir, f"nm_patch_indices_gs256.pt")
+        oe_indices = torch.load(oe_patch_indices_file)
+        nm_indices = torch.load(nm_patch_indices_file)
+        
+        self.patches = []
+        self.patch_labels = []
+        for filename in tqdm(os.listdir(img_dir)):
+            idx, patch_idx = tuple(filename.split(".")[0].split("_"))
+            idx, patch_idx = int(idx), int(patch_idx)
+            if idx not in self.labels[:, 0]:
+                continue
+            label = self.labels[self.labels[:, 0] == idx].squeeze()[1]
+
+            self.patches.append(plt.imread(os.path.join(img_dir, filename)))
+            if label == 0:
+                self.patch_labels.append([0, 0])
+            elif label == 1:
+                self.patch_labels.append([1, 0])
+            elif label == 2:
+                self.patch_labels.append([0, 1])
+            elif label == 3:
+                if patch_idx not in oe_indices[idx]:
+                    self.patch_labels.append([0, 1])
+                elif patch_idx not in nm_indices[idx]:
+                    self.patch_labels.append([1, 0])
+                elif patch_idx in oe_indices[idx] and patch_idx in nm_indices[idx]:
+                    self.patch_labels.append([1, 1])
+            else:
+                print("Invalid label", label)
+
+        self.patches = np.array(self.patches)
+        self.patches = torch.tensor(self.patches).permute(0, 3, 1, 2).float() # (n, 3, 256, 256)
+        self.patch_labels = torch.tensor(self.patch_labels).float() # (n, 2)
+
+        self.wt_indices = torch.nonzero((self.patch_labels[:, 0] == 0) & (self.patch_labels[:, 1] == 0)).squeeze()
+        self.oe_indices = torch.nonzero(self.patch_labels[:, 0] == 1).squeeze()
+        self.nm_indices = torch.nonzero(self.patch_labels[:, 1] == 1).squeeze()
+        self.dc_indices = torch.nonzero((self.patch_labels[:, 0] == 1) & (self.patch_labels[:, 1] == 1)).squeeze()
+        self.class_distribution = {
+            "wildtype": len(self.wt_indices),
+            "any overexpression": len(self.oe_indices),
+            "any nullmutation": len(self.nm_indices),
+            "doubleclone": len(self.dc_indices),
+            "total": len(self.patch_labels)
+        }
+        print("Class distribution: ", self.class_distribution)
+
+        if self.int_labels: # change (0,0) to 0, (1,0) to 1, (0,1) to 2
+            self.patch_labels = (self.patch_labels[:, 0] + 2*self.patch_labels[:, 1]).long()
+        
+        
+    def __len__(self):
+        return len(self.patch_labels)
+    
+    def __getitem__(self, idx):
+        patch = self.patches[idx] # (3, 256, 256)
+        patch_label = self.patch_labels[idx] # (2,) or (1,)
+
+        if self.transform:
+            patch = self.transform(patch)
+
+        return (patch, patch_label)
+
+    def plot_example_grid(self, n=3, random=True, figsize=(15, 15)):
+        """Plot a grid with n*n examples."""
+        assert n%3 == 0, "n must be divisible by 3"
+        if random:
+            wt_indices = self.wt_indices[np.random.choice(len(self.wt_indices), size=n*n//2, replace=False)]
+            oe_indices = self.oe_indices[np.random.choice(len(self.oe_indices), size=n*n//2, replace=False)]
+            nm_indices = self.nm_indices[np.random.choice(len(self.nm_indices), size=n*n//2, replace=False)]
+        else:
+            wt_indices = self.wt_indices[:n*n//2]
+            oe_indices = self.oe_indices[:n*n//2]
+            nm_indices = self.nm_indices[:n*n//2]
+        
+        fig, axs = plt.subplots(n, n, figsize=figsize)
+        for i, ax in enumerate(axs.flatten()):
+            if i < n*n//3:
+                label = "wildtype"
+                indices = wt_indices
+                idx = i
+            elif i < 2*n*n//3:
+                label = "overexpression"
+                indices = oe_indices
+                idx = i - n*n//3
+            else:
+                label = "nullmutation"
+                indices = nm_indices
+                idx = i - 2*n*n//3
+                # print(indices[idx], self[indices[idx]][1].mean())
+                
+            patch, patch_label = self[indices[idx]]
+            ax.imshow(patch.squeeze().permute(1, 2, 0))
+            ax.set_title(f"Wildtype")
+            if label == "nullmutation" and len(patch_label.shape) == 3:
                 ax.imshow(patch_label[0], alpha=0.5, vmin=0, vmax=1, cmap="Reds")
                 ax.set_title(f"Nullmutation [{patch_label.mean():.2f}]")
             ax.axis("off")
