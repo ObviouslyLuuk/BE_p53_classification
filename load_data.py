@@ -1,6 +1,7 @@
 
 import os
 import numpy as np
+import pandas as pd
 import torchvision
 import matplotlib.pyplot as plt
 import torch
@@ -8,7 +9,7 @@ import json
 from tqdm import tqdm
 
 
-DATA_DIR = "../../data/biopsies_s1.0_anon_data/"
+DATA_DIR = "../../data/biopsies_s1.0_anon_new/"
 
 P53_CLASS_NAMES = ["Wildtype", "Overexpression", "Nullmutation", "Doubleclone"]
 P53_CLASS_CODES = ["WT", "OE", "NM", "DC"]
@@ -369,17 +370,20 @@ class BagDataset(torch.utils.data.Dataset):
 
         # Read the labels
         labels_file = os.path.join(root_dir, f"{labels_filename}.csv")
-        self.labels = np.loadtxt(labels_file, delimiter=",", skiprows=1)
-        self.labels = self.labels.astype(int)
+        # The first column "id" are strings (like "0_1"), the second column "label" are integers (0, 1, 2, 3), so we can't use np.loadtxt
+        self.labels = pd.read_csv(labels_file)
         if data_limit:
             self.labels = self.labels[:data_limit]
+
+        # Map integers to indices for self.labels (as these indices are like "0_1" etc)
+        # self.i_to_idx = {i: idx for i, idx in enumerate(self.labels["id"])}
         
-        self.num_classes = len(np.unique(self.labels[:, 1]))
+        self.num_classes = len(np.unique(self.labels["label"]))
         if class_names and self.num_classes != len(class_names):
             self.num_classes = len(class_names)
         self.class_names = class_names
 
-        self.class_distribution = {i: np.sum(self.labels[:, 1] == i) for i in range(self.num_classes)}
+        self.class_distribution = {i: np.sum(self.labels["label"] == i) for i in range(self.num_classes)}
         if class_names:
             self.class_distribution = {class_names[i]: self.class_distribution[i] for i in range(self.num_classes)}
         print("Class distribution: ", self.class_distribution)
@@ -394,7 +398,7 @@ class BagDataset(torch.utils.data.Dataset):
 
             latents = torch.load(os.path.join(root_dir, latents_path)) # bag_idx: (n, 1, ftrs)
             self.latents = []
-            for i, idx in enumerate(self.labels[:, 0]):
+            for i, idx in enumerate(self.labels["id"]):
                 patch_latents = latents[idx]
                 self.latents.append(patch_latents) # Only keep the latents for the images in the dataset
             assert len(self.latents) == len(self.labels), f"Latents and labels don't match: {len(self.latents)} != {len(self.labels)}"
@@ -407,8 +411,8 @@ class BagDataset(torch.utils.data.Dataset):
                 # and K is the number of bag indices that are concatenated together (so 1 for all bags except doubleclone, 2 for doubleclone)
                 self.bag_indices = [[i] for i in range(len(self.labels))]
 
-                oe_indices = np.where(self.labels[:, 1] == 1)[0]
-                nm_indices = np.where(self.labels[:, 1] == 2)[0]
+                oe_indices = np.where(self.labels["label"] == 1)[0]
+                nm_indices = np.where(self.labels["label"] == 2)[0]
 
                 mixed_bags = []
                 for i in range(len(oe_indices)):
@@ -427,7 +431,8 @@ class BagDataset(torch.utils.data.Dataset):
                 
                 self.bag_indices += mixed_bags
                 # Add the doubleclone labels (-1, 3)
-                self.labels = np.concatenate((self.labels, np.array([[-1, 3]]*len(mixed_bags))), axis=0)
+                # Combine the self.labels dataframe with the doubleclone labels
+                self.labels = pd.concat([self.labels, pd.DataFrame({"id": ["-1"]*len(mixed_bags), "label": [3]*len(mixed_bags)})], ignore_index=True)
 
                 print(f"Added {len(mixed_bags)} doubleclone bags")           
 
@@ -448,7 +453,7 @@ class BagDataset(torch.utils.data.Dataset):
             self.indices = []
             self.patch_labels = []
             self.bag_sizes = []
-            for i, (idx, label) in enumerate(tqdm(self.labels)):
+            for i, (idx, label) in enumerate(tqdm(self.labels[["idx", "label"]].itertuples(index=False, name=None))):
                 img_file = os.path.join(root_dir, "biopsies", f"{idx}.png")
                 img = plt.imread(img_file)
                 img = torch.tensor(img).permute(2, 0, 1).float() # (3, h, w)
@@ -513,14 +518,14 @@ class BagDataset(torch.utils.data.Dataset):
             torch.save((self.bags, self.indices, self.patch_labels, self.bag_sizes), bags_file)
                 
         # self.bags is potentially shorter than self.labels, so we need to filter it
-        self.labels = self.labels[self.indices]
+        self.labels = self.labels.iloc[self.indices]
         assert len(self.bags) == len(self.labels), f"Bags and labels don't match: {len(self.bags)} != {len(self.labels)}"
         
     def __len__(self):
         return len(self.labels)
     
     def __getitem__(self, idx):
-        label = int(self.labels[idx, 1])
+        label = int(self.labels.loc[idx, "label"])
 
         if self.latents_path:
             if self.mix_bags:
@@ -741,7 +746,7 @@ class PatchDataset(torch.utils.data.Dataset):
         where patch latent is a vector of shape (2048),
         patch label is a vector of shape (2) with the overexpression and nullmutation labels.
     """
-    def __init__(self, root_dir, labels_filename="train", data_limit=None, int_labels=True, **kwargs):
+    def __init__(self, root_dir, labels_filename="train", data_limit=None, int_labels=True, encoder="retccl", **kwargs):
         """
         Args:
             root_dir (string): Directory with all the biopsies.
@@ -758,7 +763,10 @@ class PatchDataset(torch.utils.data.Dataset):
         
         # bag_latents_file = os.path.join(root_dir, f"bag_latents_gs256_retccl_relaxed.pt")
         # bag_patch_indices_file = os.path.join(root_dir, f"non_empty_patch_indices_gs256_relaxed.pt")
-        bag_latents_file = os.path.join(root_dir, f"bag_latents_gs256_retccl__backup.pt")
+        if encoder == "retccl":
+            bag_latents_file = os.path.join(root_dir, f"bag_latents_gs256_retccl__backup.pt")
+        elif encoder == "resnet18t":
+            bag_latents_file = os.path.join(root_dir, f"bag_latents_gs64_resnet18_tuned.pt")
         bag_patch_indices_file = os.path.join(root_dir, f"non_empty_patch_indices_gs256.pt")
         oe_patch_indices_file = os.path.join(root_dir, f"oe_patch_indices_gs256.pt")
         nm_patch_indices_file = os.path.join(root_dir, f"nm_patch_indices_gs256.pt")
@@ -775,6 +783,12 @@ class PatchDataset(torch.utils.data.Dataset):
         self.patch_latents = []
         self.patch_labels = []
         for idx, label in tqdm(self.labels):
+            assert idx in bag_latents, f"Bag {idx} not in bag_latents"
+            assert idx in bag_patch_indices, f"Bag {idx} not in bag_patch_indices"
+            # assert idx in oe_patch_indices, f"Bag {idx} not in oe_patch_indices"
+            # assert idx in nm_patch_indices, f"Bag {idx} not in nm_patch_indices"
+            assert len(bag_latents[idx]) == len(bag_patch_indices[idx]), f"Bag {idx} latents and indices don't match: {len(bag_latents[idx])} != {len(bag_patch_indices[idx])}"
+
             if label == 0: # Wildtype, use all patches
                 self.patch_latents.extend(bag_latents[idx])
                 self.patch_labels.extend([(0, 0)] * len(bag_latents[idx]))
@@ -859,6 +873,134 @@ class PatchDataset(torch.utils.data.Dataset):
         plt.show()
 
 
+class PatchImgDataset(torch.utils.data.Dataset):
+    """
+    Biopsy patch dataset with overexpression and nullmutation labels.
+
+    getitem returns (patch img, patch label) tuples, 
+        where patch img is a tensor of shape (3, 256, 256),
+        patch label is a vector of shape (2) with the overexpression and nullmutation labels.
+    """
+    def __init__(self, root_dir, labels_filename="train", data_limit=None, int_labels=True, transform=None, **kwargs):
+        """
+        Args:
+            root_dir (string): Directory with all the biopsies.
+        """
+        self.root_dir = root_dir
+        self.int_labels = int_labels
+        self.transform = transform
+
+        # Read the labels
+        labels_file = os.path.join(root_dir, f"{labels_filename}.csv")
+        self.labels = np.loadtxt(labels_file, delimiter=",", skiprows=1)
+        self.labels = self.labels.astype(int)
+        if data_limit:
+            self.labels = self.labels[:data_limit]
+
+        img_dir = os.path.join(root_dir, "patches")
+
+        oe_patch_indices_file = os.path.join(root_dir, f"oe_patch_indices_gs256.pt")
+        nm_patch_indices_file = os.path.join(root_dir, f"nm_patch_indices_gs256.pt")
+        oe_indices = torch.load(oe_patch_indices_file)
+        nm_indices = torch.load(nm_patch_indices_file)
+        
+        self.patches = []
+        self.patch_labels = []
+        for filename in tqdm(os.listdir(img_dir)):
+            idx, patch_idx = tuple(filename.split(".")[0].split("_"))
+            idx, patch_idx = int(idx), int(patch_idx)
+            if idx not in self.labels[:, 0]:
+                continue
+            label = self.labels[self.labels[:, 0] == idx].squeeze()[1]
+
+            self.patches.append(plt.imread(os.path.join(img_dir, filename)))
+            if label == 0:
+                self.patch_labels.append([0, 0])
+            elif label == 1:
+                self.patch_labels.append([1, 0])
+            elif label == 2:
+                self.patch_labels.append([0, 1])
+            elif label == 3:
+                if patch_idx not in oe_indices[idx]:
+                    self.patch_labels.append([0, 1])
+                elif patch_idx not in nm_indices[idx]:
+                    self.patch_labels.append([1, 0])
+                elif patch_idx in oe_indices[idx] and patch_idx in nm_indices[idx]:
+                    self.patch_labels.append([1, 1])
+            else:
+                print("Invalid label", label)
+
+        self.patches = np.array(self.patches)
+        self.patches = torch.tensor(self.patches).permute(0, 3, 1, 2).float() # (n, 3, 256, 256)
+        self.patch_labels = torch.tensor(self.patch_labels).float() # (n, 2)
+
+        self.wt_indices = torch.nonzero((self.patch_labels[:, 0] == 0) & (self.patch_labels[:, 1] == 0)).squeeze()
+        self.oe_indices = torch.nonzero(self.patch_labels[:, 0] == 1).squeeze()
+        self.nm_indices = torch.nonzero(self.patch_labels[:, 1] == 1).squeeze()
+        self.dc_indices = torch.nonzero((self.patch_labels[:, 0] == 1) & (self.patch_labels[:, 1] == 1)).squeeze()
+        self.class_distribution = {
+            "wildtype": len(self.wt_indices),
+            "any overexpression": len(self.oe_indices),
+            "any nullmutation": len(self.nm_indices),
+            "doubleclone": len(self.dc_indices),
+            "total": len(self.patch_labels)
+        }
+        print("Class distribution: ", self.class_distribution)
+
+        if self.int_labels: # change (0,0) to 0, (1,0) to 1, (0,1) to 2
+            self.patch_labels = (self.patch_labels[:, 0] + 2*self.patch_labels[:, 1]).long()
+        
+        
+    def __len__(self):
+        return len(self.patch_labels)
+    
+    def __getitem__(self, idx):
+        patch = self.patches[idx] # (3, 256, 256)
+        patch_label = self.patch_labels[idx] # (2,) or (1,)
+
+        if self.transform:
+            patch = self.transform(patch)
+
+        return (patch, patch_label)
+
+    def plot_example_grid(self, n=3, random=True, figsize=(15, 15)):
+        """Plot a grid with n*n examples."""
+        assert n%3 == 0, "n must be divisible by 3"
+        if random:
+            wt_indices = self.wt_indices[np.random.choice(len(self.wt_indices), size=n*n//2, replace=False)]
+            oe_indices = self.oe_indices[np.random.choice(len(self.oe_indices), size=n*n//2, replace=False)]
+            nm_indices = self.nm_indices[np.random.choice(len(self.nm_indices), size=n*n//2, replace=False)]
+        else:
+            wt_indices = self.wt_indices[:n*n//2]
+            oe_indices = self.oe_indices[:n*n//2]
+            nm_indices = self.nm_indices[:n*n//2]
+        
+        fig, axs = plt.subplots(n, n, figsize=figsize)
+        for i, ax in enumerate(axs.flatten()):
+            if i < n*n//3:
+                label = "wildtype"
+                indices = wt_indices
+                idx = i
+            elif i < 2*n*n//3:
+                label = "overexpression"
+                indices = oe_indices
+                idx = i - n*n//3
+            else:
+                label = "nullmutation"
+                indices = nm_indices
+                idx = i - 2*n*n//3
+                # print(indices[idx], self[indices[idx]][1].mean())
+                
+            patch, patch_label = self[indices[idx]]
+            ax.imshow(patch.squeeze().permute(1, 2, 0))
+            ax.set_title(f"Wildtype")
+            if label == "nullmutation" and len(patch_label.shape) == 3:
+                ax.imshow(patch_label[0], alpha=0.5, vmin=0, vmax=1, cmap="Reds")
+                ax.set_title(f"Nullmutation [{patch_label.mean():.2f}]")
+            ax.axis("off")
+        plt.show()
+
+
 
 class BiopsyKeepScaleDataset(torch.utils.data.Dataset):
     """Biopsy dataset. getitem returns (image, label) tuples."""
@@ -882,12 +1024,11 @@ class BiopsyKeepScaleDataset(torch.utils.data.Dataset):
         
         # Read the labels
         labels_file = os.path.join(root_dir, f"{labels_filename}.csv")
-        self.labels = np.loadtxt(labels_file, delimiter=",", skiprows=1)
-        self.labels = self.labels.astype(int)
+        self.labels = pd.read_csv(labels_file) # "id" and "label" columns, where id is {case_id}_{biopsy_id}
         if data_limit:
             self.labels = self.labels[:data_limit]
 
-        self.num_classes = len(np.unique(self.labels[:, 1]))
+        self.num_classes = len(np.unique(self.labels["label"]))
         if class_names and self.num_classes != len(class_names):
             self.num_classes = len(class_names)
         self.class_names = class_names
@@ -897,25 +1038,26 @@ class BiopsyKeepScaleDataset(torch.utils.data.Dataset):
             biopsy_dims = json.load(f)
         filtered_labels = []
         max_dim = 0
-        for idx, label in self.labels:
+        for idx, label in self.labels[["id", "label"]].itertuples(index=False, name=None):
             w_h = biopsy_dims[str(idx)]
             if size_limit and max(w_h) > size_limit:
                 continue
             max_dim = max(max_dim, max(w_h))
             filtered_labels.append([idx, label])
-        self.labels = np.array(filtered_labels)
+        self.labels = pd.DataFrame(filtered_labels, columns=["id", "label"])
         resize_factor = 1 / spacing
 
         self.size = int(size_limit * resize_factor)
 
-        self.class_distribution = {i: np.sum(self.labels[:, 1] == i) for i in range(self.num_classes)}
+        # self.class_distribution = {i: np.sum(self.labels[:, 1] == i) for i in range(self.num_classes)}
+        self.class_distribution = {i: np.sum(self.labels["label"] == i) for i in range(self.num_classes)}
         if class_names:
             self.class_distribution = {class_names[i]: self.class_distribution[i] for i in range(self.num_classes)}
         print("Class distribution: ", self.class_distribution)
 
         if latents_path:
             self.latents = torch.load(os.path.join(root_dir, latents_path)) # (n, 4, ftrs)
-            self.latents = self.latents[self.labels[:, 0]] # Only keep the latents for the images in the dataset
+            self.latents = self.latents[self.labels["id"]] # Only keep the latents for the images in the dataset
             return
 
         # If self.imgs is already pickled, load it
@@ -928,7 +1070,7 @@ class BiopsyKeepScaleDataset(torch.utils.data.Dataset):
             # Read the images
             imgs_dir = os.path.join(root_dir, "biopsies")
             self.imgs = []
-            for idx in tqdm(self.labels[:, 0]):
+            for idx in tqdm(self.labels["id"]):
                 img_file = os.path.join(imgs_dir, f"{idx}.png")
                 img = plt.imread(img_file)
                 img = torch.tensor(img).permute(2, 0, 1).float()
@@ -944,7 +1086,7 @@ class BiopsyKeepScaleDataset(torch.utils.data.Dataset):
         return len(self.labels)
     
     def __getitem__(self, idx):
-        label = int(self.labels[idx, 1])
+        label = int(self.labels.loc[idx, "label"])
 
         if self.latents_path:
             return (self.latents[idx], label)

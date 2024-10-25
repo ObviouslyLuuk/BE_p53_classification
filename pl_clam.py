@@ -28,12 +28,12 @@ print("Device: {}".format(device))
 
 class CLAM_MB(pl.LightningModule):
     def __init__(self, gate = True, size_arg = "small", dropout = True, k_sample=8, num_classes=4,
-        instance_loss_fn=nn.CrossEntropyLoss(), subtyping=False,
+        instance_loss_fn=nn.CrossEntropyLoss(), subtyping=False, encoding_size=2048,
         lr=2e-4, weight_decay=1e-5, lr_step_size=30, lr_gamma=0.1,
         **kwargs
         ):
         super(CLAM_MB, self).__init__()
-        self.size_dict = {"small": [2048, 512, 256], "big": [2048, 512, 384]}
+        self.size_dict = {"small": [encoding_size, 512, 256], "big": [encoding_size, 512, 384]}
         size = self.size_dict[size_arg]
         fc = [nn.Linear(size[0], size[1]), nn.ReLU()]
         if dropout:
@@ -51,6 +51,7 @@ class CLAM_MB(pl.LightningModule):
         self.k_sample = k_sample
         self.instance_loss_fn = instance_loss_fn
         self.num_classes = num_classes
+        self.encoding_size = encoding_size
         self.subtyping = subtyping
         initialize_weights(self)
 
@@ -63,7 +64,7 @@ class CLAM_MB(pl.LightningModule):
 
         print("MODEL: CLAM_MB")
         print(f"MODEL ARGS: gate={gate}, size_arg={size_arg}, dropout={dropout}, k_sample={k_sample}, num_classes={num_classes}, subtyping={subtyping}" + \
-              f"lr={lr}, weight_decay={weight_decay}, lr_step_size={lr_step_size}, lr_gamma={lr_gamma}")
+              f"encoding_size={encoding_size}, lr={lr}, weight_decay={weight_decay}, lr_step_size={lr_step_size}, lr_gamma={lr_gamma}")
 
         self.outputs = {'train': [], 'val': [], 'test': []}
 
@@ -401,14 +402,18 @@ if __name__ == "__main__":
     parser.add_argument("--lr_gamma", type=float, default=0.1, help="Gamma for the learning rate scheduler.")
 
     # Specific arguments
-    # parser.add_argument("--model", type=str, default="CLAM_MB", help="Model to use.")
-    parser.add_argument("--model", type=str, default="CLAM_db", help="Model to use.")
+    parser.add_argument("--model", type=str, default="CLAM_MB", help="Model to use.")
+    # parser.add_argument("--model", type=str, default="CLAM_db", help="Model to use.")
+    parser.add_argument("--encoding_size", type=int, default=2048)
     parser.add_argument("--class_distr_factors", nargs="+", type=int, default=[1,1,1,0], help="Class distribution factors.")
     parser.add_argument("--see_opposite_class_data", type=str, default="no_loss", help="How to handle the opposite class data in the double binary model.")
     # parser.add_argument("--see_opposite_class_data", type=str, default="normal", help="How to handle the opposite class data in the double binary model.")
-    parser.add_argument("--latents_path", type=str, default="bag_latents_gs256_retccl__backup.pt", help="Path to the latents file.")
+    parser.add_argument("--latents_path", type=str, default="bag_latents_gs256_retccl.pt", help="Path to the latents file.")
+    # parser.add_argument("--latents_path", type=str, default="bag_latents_gs128_resnet18_tuned.pt", help="Path to the latents file.")
+    # parser.add_argument("--latents_path", type=str, default="bag_latents_gs256_retccl_tuned_hybrid.pt", help="Path to the latents file.")
     parser.add_argument("--subtyping", type=bool, default=False, help="Whether to use subtyping in the CLAM model.")
-    parser.add_argument("--mix_bags", type=int, default=1e6, help="How many mixed bags in the CLAM model.")
+    parser.add_argument("--mix_bags", type=int, default=0, help="How many mixed bags in the CLAM model.")
+    # parser.add_argument("--mix_bags", type=int, default=1e6, help="How many mixed bags in the CLAM model.")
 
     # Other arguments
     parser.add_argument("--num_runs", type=int, default=1, help="Number of runs to perform per fold.")
@@ -481,6 +486,12 @@ if __name__ == "__main__":
         model_str += "_sub"
     if args.mix_bags:
         model_str += f"_m"
+    if args.encoding_size != 2048:
+        model_str += f"_enc{args.encoding_size}"
+        gs = args.latents_path.split("_")[2]
+        model_str += f"_{gs}"
+    if "tuned" in args.latents_path:
+        model_str += "_tuned"
     name = f"e{args.epochs}_{model_str}"
     args.group_name = name
 
@@ -514,7 +525,7 @@ if __name__ == "__main__":
 
             # Initialize the model
             model = Model(num_classes=len(P53_CLASS_NAMES), lr=args.lr, weight_decay=args.weight_decay,
-                                lr_step_size=args.lr_step_size, lr_gamma=args.lr_gamma,
+                                lr_step_size=args.lr_step_size, lr_gamma=args.lr_gamma, encoding_size=args.encoding_size,
                                 see_opposite_class_data=args.see_opposite_class_data, subtyping=args.subtyping)
             model.to(device)
 
@@ -540,7 +551,7 @@ if __name__ == "__main__":
             trainer.fit(model, train_loader, val_loader)
 
             # Load the best model
-            model = Model.load_from_checkpoint(checkpoint_callback.best_model_path,
+            model = Model.load_from_checkpoint(checkpoint_callback.best_model_path, encoding_size=args.encoding_size,
                                                      num_classes=len(P53_CLASS_NAMES), subtyping=args.subtyping)
 
             # Test the model
