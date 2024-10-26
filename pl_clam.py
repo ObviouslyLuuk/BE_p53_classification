@@ -12,7 +12,6 @@ from sklearn.metrics import roc_auc_score, roc_curve
 from sklearn.metrics import auc as calc_auc
 
 import argparse
-import os
 from sklearn.model_selection import KFold
 
 from load_data import BagDataset, get_balanced_dataloader, DATA_DIR, P53_CLASS_NAMES, \
