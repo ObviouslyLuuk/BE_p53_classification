@@ -22,7 +22,9 @@ The main model foundations used were CLAM and ResNet, with RetCCL used for featu
 - `eval.py`: Contains the evaluation functions to use during PyTorch Lightning training
 
 ## Running the code
-Before running, the code expects a data root directory "../../data" to be present, but this can be changed at the top of `load_data.py`. In that root should be directories for each dataset (for example "LANS" and "BOLERO"). The main dataset (LANS in my case) should have the following structure:
+`requirements.txt` contains the necessary packages to run the code. However, I just used pip freeze -> requirements.txt, so it might contain more than necessary (sorry about that).
+
+Before running, the code expects a data root directory "../../data" to be present, but this path can be changed at the top of `load_data.py`. In that root should be directories for each dataset (for example "LANS" and "BOLERO"). The main dataset (LANS in my case) should have the following structure:
 - `biopsies/` containing the biopsy pngs, with names like "11_3.png" for the 11th slide and 3rd biopsy on that slide
 - `train.csv` and `test.csv` containing the image names and labels like:
 ```
@@ -39,3 +41,6 @@ Case ID,{pathologist id}, ... ,GS
 {case id},{pathologist rating}, ... ,{gold standard label}
 ...
 ```
+
+### Only running for the results
+If you have the results/ directory with the saved model predictions, you can run the `vis_results.ipynb` file without any other data. This will load the predictions and generate the statistics and figures.
